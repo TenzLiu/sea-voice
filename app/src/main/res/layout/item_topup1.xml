@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/rl_back_topup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:background="@drawable/selector_bg_jb">
+
+
+    <LinearLayout
+        android:id="@+id/rl_show_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/wallet_yhc" />
+
+        <TextView
+            android:id="@+id/tv_show_topup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_gravity="center_vertical"
+            android:text="--"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_price_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#4BA6DC"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>
+</RelativeLayout>

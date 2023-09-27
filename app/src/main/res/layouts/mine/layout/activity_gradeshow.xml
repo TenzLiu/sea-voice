@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.siyecaoi.yy.view.ScrollInterceptScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/mWebview_gradeshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10">
+
+        </WebView>
+
+        <include layout="@layout/view_line_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_14">
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_grademei_gradeshow"
+                android:textColor="@color/black8"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_showone_gradeshow"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_lei_gradeshow"
+                android:textColor="@color/black8"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_showtwo_gradeshow"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_show_gradeshow"
+                android:textColor="@color/black8"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView_gradeshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.siyecaoi.yy.view.ScrollInterceptScrollView>

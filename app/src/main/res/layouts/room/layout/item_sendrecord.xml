@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tv_name_sendrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2980B9"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_toEndOf="@id/tv_name_sendrecord"
+        android:text="收到您"
+        android:textColor="#1C2023" />
+
+    <TextView
+        android:id="@+id/tv_gold_sendrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/dan_gold_s"
+        android:drawablePadding="@dimen/dp_4"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_liang_sendrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_sendrecord"
+        android:layout_marginTop="@dimen/dp_4"
+        android:src="@drawable/liang_id" />
+
+    <TextView
+        android:id="@+id/tv_id_sendrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_liang_sendrecord"
+        android:layout_marginStart="@dimen/dp_3"
+        android:layout_toEndOf="@id/iv_liang_sendrecord"
+        android:textColor="#5E6973"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_time_sendrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_id_sendrecord"
+        android:layout_alignParentEnd="true"
+        android:textColor="#9FA3B0"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

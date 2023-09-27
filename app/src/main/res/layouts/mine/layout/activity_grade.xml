@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8FF"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_grade">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            tl:layout_constraintStart_toStartOf="parent"
+            tl:layout_constraintTop_toTopOf="parent"
+            tl:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/dp_16"/>
+
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/mTabLayout_grade"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_42"
+            tl:tl_indicator_color="@color/white_color"
+            tl:tl_indicator_width="@dimen/dp_10"
+            tl:tl_tab_space_equal="true"
+            tl:tl_indicator_height="@dimen/dp_3"
+            tl:tl_indicator_corner_radius="4dp"
+            tl:layout_constraintTop_toTopOf="parent"
+            tl:layout_constraintStart_toStartOf="parent"
+            tl:layout_constraintEnd_toEndOf="parent"
+            tl:tl_textSelectColor="@color/white_color"
+            tl:tl_textUnselectColor="@color/white_color"
+            tl:tl_textsize="@dimen/sp_14">
+
+        </com.flyco.tablayout.SlidingTabLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_share_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone"
+            android:src="@drawable/share" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager_grade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
+</LinearLayout>

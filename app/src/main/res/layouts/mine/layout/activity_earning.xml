@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:background="@drawable/bg_red_g" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_124"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_show">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_15"
+                android:text="@string/tv_diamond_wallet"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_you_earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="--"
+                android:textColor="@color/FF003F"
+                android:textSize="@dimen/sp_28"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_draw_earning"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:background="@drawable/bg_round15_start_red"
+                android:gravity="center"
+                android:text="@string/tv_draw_get"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_change_earning"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:text="@string/tv_chnage_get"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

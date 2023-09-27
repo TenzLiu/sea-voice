@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_30"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_header_giftuser"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_6"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+    <ImageView
+        android:id="@+id/iv_select_giftuser"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:src="@drawable/select_img_bg"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_name_giftuser"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="--"
+        android:textColor="@color/white_color"
+        android:textSize="6sp"
+        android:gravity="center"
+        android:background="@drawable/bg_gift_mic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

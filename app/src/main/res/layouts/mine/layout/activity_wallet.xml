@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8FF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:padding="@dimen/dp_15"
+        android:background="@drawable/bg_wallet_item">
+
+        <TextView
+            android:id="@+id/tv_you_wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_you_wallet"
+            android:textColor="@color/textColor103"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_you_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000103"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/wallet_yhc"
+            android:drawablePadding="@dimen/dp_6"
+            android:textSize="32sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_124"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_14"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:padding="@dimen/dp_15"
+        android:background="@drawable/bg_wallet_item">
+
+        <TextView
+            android:id="@+id/tv_you_earning_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_income"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="@string/tv_diamond_wallet"
+            android:textColor="@color/textColor103"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_you_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@id/tv_you_earning_name"
+            android:text="--"
+            android:textColor="#000103"
+            android:textSize="32sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_draw_earning"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:background="@drawable/bg_mine_sex"
+                android:gravity="center"
+                android:text="@string/tv_draw_get"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                />
+            <TextView
+                android:id="@+id/btn_change_earning"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:background="@drawable/bg_mine_sex"
+                android:gravity="center"
+                android:text="兑换"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fjsr_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:padding="@dimen/dp_15"
+        android:background="@drawable/bg_wallet_item">
+
+        <TextView
+            android:id="@+id/fjsr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="我的收益"
+            android:textStyle="bold"
+            android:textColor="@color/textColor103"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/wallet_gold"
+            android:text="查看收益"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#2B2B2B"
+            android:drawablePadding="@dimen/dp_6"
+            android:drawableEnd="@drawable/arrows"/>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_topup_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_mine_sex"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/dp_38"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:text="@string/tv_topup_wallet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:paddingVertical="@dimen/dp_12"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+</LinearLayout>

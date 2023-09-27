@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mSwipeRefreshLayout_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+        android:id="@+id/mscrollView_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_99"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_attention_friend"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_clicker">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:drawableTop="@drawable/message_attention"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_attention_mine"
+                        android:textColor="@color/black8"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_fans_friend"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_clicker">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:drawableTop="@drawable/message_fans"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_fans_mine"
+                        android:textColor="@color/black8"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_invite_friend"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:drawableTop="@drawable/message_invite"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_invite_friend"
+                        android:textColor="@color/black8"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="@string/tv_myfriend_friend"
+                android:textColor="@color/black8"
+                android:textSize="@dimen/sp_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecyclerView_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_7">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

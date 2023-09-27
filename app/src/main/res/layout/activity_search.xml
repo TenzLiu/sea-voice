@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_rl"
+        tl:layout_constraintTop_toTopOf="parent"
+        tl:layout_constraintStart_toStartOf="parent"
+        tl:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back1"/>
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/mTabLayout_home"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="44dp"
+            tl:tl_indicator_color="#4BA6DC"
+            tl:tl_indicator_corner_radius="@dimen/dp_2"
+            tl:tl_indicator_margin_bottom="@dimen/dp_3"
+            android:layout_centerInParent="true"
+            tl:tl_indicator_width="@dimen/dp_10"
+            tl:tl_indicator_height="@dimen/dp_3"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textBold="SELECT"
+            tl:tl_textSelectColor="@color/textColor"
+            tl:tl_textUnselectColor="@color/textColor6"
+            tl:tl_textsize="@dimen/sp_17"
+            tl:tl_underline_height="@dimen/dp_3" />
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tl:layout_constraintBottom_toBottomOf="parent"
+        tl:layout_constraintTop_toBottomOf="@id/home_rl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

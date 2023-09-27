@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp_12"
+        android:background="@drawable/opinion_bg"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_input_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:background="@color/transparent"
+            android:padding="@dimen/dp_8"
+            android:hint="@string/hint_show_opinion"
+            android:maxLength="200"
+            android:minHeight="@dimen/dp_130"
+            android:textColorHint="#9FA3B0"
+            android:textSize="@dimen/sp_12" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="还可以输入"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/sp_12" />
+            <TextView
+                android:id="@+id/tv_end_opinon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="200"
+                android:textColor="#4BA6DC"
+                android:textSize="@dimen/sp_12" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="字"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/edt_phone_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:hint="@string/hint_show1_opinion"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColorHint="#9FA3B0"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_12" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:background="@color/dividing_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:text="@string/hint_show2_opinion"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/sp_12" />
+
+
+    <Button
+        android:id="@+id/btn_Submit"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:text="确认提交" />
+</LinearLayout>

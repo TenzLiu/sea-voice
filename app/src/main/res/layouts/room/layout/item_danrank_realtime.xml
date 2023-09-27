@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_20">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_header_danrank"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginBottom="@dimen/dp_24"
+        app:placeholderImage="@drawable/avatar1"
+        app:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_name_danrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/iv_header_danrank"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_13" />
+
+
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name_danrank"
+        android:layout_marginStart="@dimen/dp_4"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone"
+        android:layout_toEndOf="@id/tv_name_danrank"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_tag_blue3_17dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_time_danrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name_danrank"
+        android:layout_marginStart="@dimen/dp_4"
+        android:textSize="@dimen/sp_10"
+        android:layout_toEndOf="@id/tv_level"
+        android:textColor="@color/textColor9" />
+
+    <TextView
+        android:id="@+id/tv_wan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_danrank"
+        android:layout_alignStart="@id/tv_name_danrank"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="玩"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_wan_danrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_wan"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginEnd="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_wan"
+        android:textColor="#CC471E"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_huode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_wan_danrank"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_toEndOf="@id/tv_wan_danrank"
+        android:text="获得"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_liwu_danrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_huode"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginEnd="@dimen/dp_2"
+        android:layout_toEndOf="@id/tv_huode"
+        android:textColor="#CC471E"
+        android:textSize="@dimen/sp_11" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_danrank"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

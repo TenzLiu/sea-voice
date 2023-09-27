@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_sendother"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/default_head"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_name_sendother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_toEndOf="@id/iv_show_sendother"
+        android:text="--" />
+
+
+    <TextView
+        android:id="@+id/tv_send_sendother"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_zengsong"
+        android:gravity="center"
+        android:text="@string/tv_sendother"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/white" />
+</RelativeLayout>

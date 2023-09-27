@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_phone_forgetpass"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_10" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+
+        <EditText
+            android:id="@+id/edt_phone_bindphone"
+            tools:ignore="TextFields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_phone_forgetpass"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textSize="@dimen/sp_16" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:background="@color/bg_line" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_code_forgetpass"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_10" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+
+        <TextView
+            android:id="@+id/tv_getcode_bindphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingVertical="@dimen/dp_5"
+            android:paddingHorizontal="@dimen/dp_7"
+            android:background="@drawable/getcode_bg"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/tv_getcode_forgetpass"
+            android:textColor="#2980B9"
+            android:textSize="@dimen/sp_12"/>
+
+        <EditText
+            android:id="@+id/edt_psd_bindphone"
+            tools:ignore="TextFields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/tv_getcode_bindphone"
+            android:background="@color/lucency"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_code_bindalipay"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:background="@color/bg_line" />
+
+    <Button
+        android:id="@+id/btn_sure_bindphone"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_27"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:text="@string/tv_next" />
+</LinearLayout>

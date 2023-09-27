@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_back_voice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_6"
+    android:background="@drawable/bg_round5_chat"
+    android:paddingBottom="8dp"
+    android:paddingHorizontal="8dp">
+
+    <TextView
+        android:id="@+id/tv_show_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/white"
+
+        android:textSize="@dimen/sp_11" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_chat"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_2"
+        fresco:actualImageScaleType="fitXY"
+        android:layout_toEndOf="@id/tv_show_chat"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_end_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_alignBottom="@id/tv_show_chat"
+        android:layout_toEndOf="@id/iv_show_chat"
+        android:text=""
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/sp_11"
+        android:visibility="gone" />
+</RelativeLayout>

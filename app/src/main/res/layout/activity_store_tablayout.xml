@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_shop"/>
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_height="@dimen/dp_42">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:drawableStart="@drawable/icon_back"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:textColor="@color/textColor3"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dp_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    android:text="道具商城"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_right_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:padding="@dimen/dp_5"
+                    android:textColor="@color/textColor3" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        tl:tl_bar_color="#F2FBF9"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="#62AE9E"
+        tl:tl_indicator_margin_bottom="3dp"
+            android:layout_marginTop="@dimen/dp_30"
+        tl:tl_indicator_margin_left="3dp"
+        tl:tl_indicator_margin_right="3dp"
+        tl:tl_indicator_margin_top="3dp"
+        tl:tl_bar_stroke_color="@color/transparent"
+        tl:tl_textSelectColor="@color/white_color"
+        tl:tl_indicator_corner_radius="@dimen/dp_30"
+        tl:tl_textUnselectColor="#4BA6DC"
+        tl:tl_textsize="@dimen/sp_12">
+
+    </com.flyco.tablayout.SegmentTabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+</RelativeLayout>

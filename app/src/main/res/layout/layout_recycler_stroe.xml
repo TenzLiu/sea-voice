@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_buy"
+        android:text="购买"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/white_color"
+        android:background="@drawable/bg_green_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="@dimen/dp_6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_give"
+        android:text="赠送"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#4BA6DC"
+        android:background="@drawable/bg_green_line_20dp_solid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_buy"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="@dimen/dp_6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price"
+        android:text="0"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_buy"
+        android:drawablePadding="@dimen/dp_6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_6"
+        android:drawableStart="@drawable/gold"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_buy"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:padding="@dimen/dp_1"
+     >
+
+        <com.siyecaoi.yy.view.RoundRecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rlClipBackground="true"
+            app:rlRadius="@dimen/dp_20" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_buy"
+        app:constraint_referenced_ids="tv_buy,tv_give,tv_price" />
+</androidx.constraintlayout.widget.ConstraintLayout>

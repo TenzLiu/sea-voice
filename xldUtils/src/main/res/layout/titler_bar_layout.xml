@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftButton"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:background="@color/textColorHint"
+        android:textSize="@dimen/textSize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_20"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+</merge>

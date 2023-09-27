@@ -1,0 +1,530 @@
+<resources>
+    <string name="app_name">惊涛语音</string>
+
+    <string name="test_url">http://p0.qhimgs4.com/t0142d928c84fe67524.jpg</string>
+
+    <string name="hint_exit">再点一次退出</string>
+    <string name="tv_guide">立即体验</string>
+    <string name="tv_closing">结算</string>
+    <string name="tv_close">关闭</string>
+    <string name="tv_jump">跳过</string>
+    <string name="tv_delete">删除</string>
+    <string name="tv_over">完成</string>
+    <string name="tv_save">保存</string>
+    <string name="tv_exit">退出登录</string>
+    <string name="tv_sex">性别</string>
+    <string name="tv_man">男</string>
+    <string name="tv_woman">女</string>
+    <string name="tv_yes">是</string>
+    <string name="tv_no">否</string>
+    <string name="tv_submit">提交</string>
+    <string name="tv_send">发送</string>
+    <string name="tv_get_code">获取验证码</string>
+    <string name="tv_getagain_code">重新获取</string>
+    <string name="tv_next">下一步</string>
+    <string name="tv_sure">确定</string>
+    <string name="tv_affirm">确认</string>
+    <string name="tv_affirmband">确认绑定</string>
+    <string name="tv_nodata">暂无数据</string>
+    <string name="tv_default">默认</string>
+    <string name="tv_cancel">取消</string>
+    <string name="tv_nothing"> </string>
+    <string name="hint_wen">温馨提示</string>
+    <string name="tv_buy">立即购买</string>
+    <string name="tv_share">分享到</string>
+    <string name="tv_money">¥</string>
+    <string name="tv_digits">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="tv_total">合计：</string>
+    <string name="tv_fans">粉丝：</string>
+    <string name="tv_win">胜</string>
+    <string name="tv_flat">平</string>
+    <string name="tv_lose">负</string>
+    <string name="tv_name">姓名</string>
+    <string name="tv_sendother">赠送</string>
+    <string name="tv_sendotherto">已赠送</string>
+
+
+    <string name="tv_you">浪花</string>
+    <string name="tv_sixin">私信</string>
+    <string name="tv_topup">充值</string>
+    <string name="tv_micshow">号麦位</string>
+    <string name="tv_new_message">底部有新消息</string>
+    <string name="tv_wheat_p">排麦</string>
+    <string name="tv_cancel_wheat">取消排麦</string>
+    <string name="tv_now_wheat">排麦人数</string>
+    <string name="tv_login_success">登录成功</string>
+    <string name="tv_register_success">注册成功</string>
+
+
+    <string name="title_home">首页</string>
+
+    <string name="tv_hot_home">热门</string>
+    <string name="tv_match_home">速配</string>
+    <string name="tv_women_home">女神</string>
+    <string name="tv_men_home">男神</string>
+    <string name="tv_pei_home">陪玩</string>
+    <string name="tv_rec_home">游戏</string>
+    <string name="tv_music_home">听歌</string>
+    <string name="tv_miai_home">相亲</string>
+    <string name="tv_city_home">同城</string>
+    <string name="tv_radio_home">电台</string>
+
+    <string name="title_voice">聊天室</string>
+    <string name="tv_con_voice">贡献榜</string>
+    <string name="tv_music_voice">播放音乐</string>
+    <string name="tv_type_chat_voice">聊天</string>
+    <string name="tv_leave_voice">离开</string>
+    <string name="tv_apphint_voice"> 惊涛语音：官方倡导绿色聊天，任何违法，低俗。暴力，敲诈等不良信 息，官方将会采取封号处理。</string>
+    <string name="hint_chat_voice">输入你想说的话</string>
+    <string name="hint_chat1_voice">房间</string>
+    <string name="hint_chat2_voice">全平台</string>
+
+    <!--<string name="tv_show_onlines_user">在线用户</string>-->
+    <string name="tv_show_onlines_user">在线听众</string>
+
+    <string name="tv_onwheat_bottomshow">抱Ta上麦</string>
+    <string name="tv_banmai_bottomshow">禁麦此座位</string>
+    <string name="tv_block_bottomshow">封锁此座位</string>
+    <string name="tv_noblock_bottomshow">解封此座位</string>
+    <string name="tv_mai_bottomshow">解禁此座位</string>
+    <string name="tv_move_bottomshow">移到此座位</string>
+
+    <string name="tv_informroom_bottomshow">举报房间</string>
+    <string name="tv_mix_bottomshow">最小化</string>
+    <string name="tv_exitroom_bottomshow">退出房间</string>
+    <string name="tv_closechat_bottomshow">关闭公屏</string>
+    <string name="tv_openchat_bottomshow">打开公屏</string>
+    <string name="tv_set_bottomshow">房间设置</string>
+    <string name="tv_openauction_bottomshow">开启竞拍模式</string>
+    <string name="tv_disauction_bottomshow">关闭竞拍模式</string>
+    <string name="tv_auction_bottomshow">竞拍</string>
+    <string name="tv_openpk_bottomshow">开启PK</string>
+    <string name="tv_dispk_bottomshow">关闭PK</string>
+
+    <string name="tv_addblack_hint">加入黑名单成功</string>
+    <string name="tv_disblack_hint">移除黑名单成功</string>
+    <string name="tv_openjp_hint">开启竞拍成功</string>
+    <string name="tv_disjp_hint">关闭竞拍成功</string>
+
+
+    <string name="tv_sensitivity_report">政治敏感</string>
+    <string name="tv_se_report">色情低俗</string>
+    <string name="tv_ad_report">广告骚扰</string>
+    <string name="tv_at_report">人身攻击</string>
+
+
+    <string name="tv_sendgift_bottomshow">送礼物</string>
+    <string name="tv_downwheat_bottomshow">抱Ta下麦</string>
+    <string name="tv_outhome_bottomshow">踢出房间</string>
+    <string name="tv_setadmin_bottomshow">设置管理员</string>
+    <string name="tv_deladmin_bottomshow">移除管理员</string>
+    <string name="tv_addblacklist_bottomshow">拉黑</string>
+    <string name="tv_send_bottomshow">赠送浪花</string>
+
+
+    <string name="tv_message_bottomshow">查看资料</string>
+    <string name="tv_down_bottomshow">下麦旁听</string>
+    <string name="tv_up_bottomshow">上麦</string>
+    <string name="tv_home_bottomshow">房主</string>
+
+
+    <string name="tv_reward_reward">打赏</string>
+    <string name="tv_rewardyou_reward">打赏浪花</string>
+    <string name="tv_packet_reward">红包打赏</string>
+    <string name="tv_data_person">资料</string>
+    <string name="tv_attention_person">+  关注</string>
+    <string name="tv_attentioned_person">已关注</string>
+    <string name="tv_all_person">全麦嘉宾</string>
+    <string name="tv_number_person">位嘉宾</string>
+
+    <string name="tv_cai_ranking">财富榜</string>
+    <string name="tv_charm_ranking">魅力榜</string>
+    <string name="tv_day_ranking">日榜</string>
+    <string name="tv_week_ranking">周榜</string>
+    <string name="tv_all_ranking">总榜</string>
+    <string name="tv_up_ranking">贡献</string>
+    <string name="tv_down_ranking">魅力</string>
+
+
+    <string name="title_onlines">在线列表</string>
+
+
+    <string name="title_topic">设置房间话题</string>
+    <string name="hint_topic_topic">请输入主题</string>
+    <string name="hint_content_topic">请输入内容</string>
+    <string name="hint_save_topic">保存成功</string>
+
+    <string name="title_roomset">房间设置</string>
+    <string name="tv_name_roomset">名称</string>
+    <string name="hint_name_roomset">改个有趣的名称吸引观众吧</string>
+    <string name="tv_pass_roomset">密码</string>
+    <string name="hint_pass_roomset">请设置房间密码</string>
+    <string name="tv_tag_roomset">标签</string>
+    <string name="tv_topic_roomset">话题</string>
+    <string name="tv_back_roomset">选择壁纸</string>
+    <string name="tv_shield_roomset">房间礼物特效</string>
+    <string name="tv_hint_roomset">进入房间提示</string>
+    <string name="tv_admin_roomset">管理员</string>
+    <string name="tv_disadmin_roomset">移除管理员</string>
+    <string name="tv_black_roomset">黑名单</string>
+    <string name="tv_clear_roomset">清空礼物积分</string>
+    <string name="mark_1">聊天</string>
+    <string name="mark_2">吃鸡</string>
+    <string name="mark_3">王者</string>
+    <string name="mark_4">真心话</string>
+    <string name="mark_5">情感</string>
+    <string name="mark_6">大冒险</string>
+    <string name="mark_7">小游戏</string>
+    <string name="mark_8">男神</string>
+    <string name="mark_9">午夜</string>
+    <string name="mark_10">讲故事</string>
+
+    <string name="title_backset">背景设置</string>
+    <string name="tv_choose_backset">选择背景图</string>
+    <string name="tv_choose1_backset">拍照上传</string>
+    <string name="tv_choose2_backset">从相册选择</string>
+
+    <string name="title_roomhint">设置进入房间提示</string>
+    <string name="tv_hint_roomhint">提示：用户进入房间即可看到这段提示</string>
+    <string name="tv_show_roomhint">请输入内容</string>
+
+    <string name="title_balckuser">黑名单</string>
+    <string name="tv_nodata_balckuser">暂没有设置黑名单</string>
+    <string name="tv_nodata_roomadmin">暂没有设置管理员</string>
+    <string name="tv_nodata_music">暂无歌曲</string>
+    <string name="tv_nodata_musicupdate">暂无通过审核的音乐，\n请到 惊涛语音-电脑端进行音乐上传！\n官网www.youyou.com</string>
+
+    <string name="title_theme">主题背景</string>
+
+    <string name="title_roompk">PK设置</string>
+    <string name="tv_record_roompk">记录</string>
+    <string name="tv_type_roompk">投票类型</string>
+    <string name="tv_type_price_roompk">打赏PK</string>
+    <string name="tv_type_price_show_roompk">打赏PK（1浪花=1PK值）</string>
+    <string name="tv_type_number_roompk">投票PK</string>
+    <string name="tv_type_number_show_roompk">投票PK（1人=1PK值）</string>
+    <string name="tv_time_roompk">时间限制</string>
+
+
+    <string name="title_pkhistory">PK记录</string>
+    <string name="tv_again_pkhistory">再次PK</string>
+    <string name="tv_price_pkhistory">按礼物价值投票</string>
+    <string name="tv_person_pkhistory">按人数投票</string>
+
+    <string name="tv_tou_roompk">投票给Ta</string>
+    <string name="tv_send_roompk">送礼物</string>
+    <string name="tv_look_roompk">查看资料</string>
+
+    <string name="tv_topup_gift">充值</string>
+    <string name="tv_topuphis_gift">充值记录</string>
+    <string name="tv_data_gift">资料</string>
+    <string name="tv_bao_gift">包裹</string>
+    <string name="tv_party_gift">活动礼物</string>
+    <string name="tv_packet_gift">背包</string>
+    <string name="tv_nomal_gift">礼物</string>
+    <string name="tv_miracle_gift">神奇礼物</string>
+    <string name="tv_exc_gift">专属礼物</string>
+    <string name="tv_send_gift">送给</string>
+    <string name="tv_sendto_gift">赠送</string>
+    <string name="tv_all_gift">所有麦上嘉宾</string>
+    <string name="tv_nodata_gift">礼物空空如也~</string>
+    <string name="tv_gold">浪花</string>
+
+    <string name="tv_number1_gift">一心一意</string>
+    <string name="tv_number10_gift">十全十美</string>
+    <string name="tv_number38_gift">想你爱你</string>
+    <string name="tv_number66_gift">一切顺利</string>
+    <string name="tv_number188_gift">要抱抱</string>
+    <string name="tv_number520_gift">我爱你</string>
+    <string name="tv_number1314_gift">一生一世</string>
+
+    <string name="title_packet">红包</string>
+    <string name="tv_send_packet">发了拼手气红包</string>
+    <string name="tv_sendone_packet">给您发了一个红包</string>
+    <string name="tv_getone_packet">已领取</string>
+    <string name="tv_number_packet">个</string>
+    <string name="tv_show_packet">/</string>
+    <string name="tv_all_packet">,共</string>
+    <string name="tv_youz_packet">钻石</string>
+    <string name="hint_nogold_gift">余额不足，是否前往充值</string>
+    <string name="hint_nogold_packet">余额不足，是否前往充值</string>
+    <string name="tv_topup_packet">确认</string>
+    <string name="hint_success_packet">红包已送出</string>
+    <string name="hint_success_gift">礼物已送出</string>
+
+    <string name="hint_show_chests">\n\n3.获得的奖品在礼物界面中查看\n 温馨提示：连续开宝箱中大奖几率更大哦~</string>
+    <string name="tv_open_chests">确定要开启%d次宝箱吗？</string>
+
+
+    <string name="title_music">我的曲库</string>
+    <string name="tv_hot_music">热门曲库</string>
+    <string name="hint_search_music">请输入歌名，歌手名进行搜索</string>
+    <string name="tv_updata_music">上传音乐</string>
+    <string name="tv_mine_music">本地音乐</string>
+    <string name="tv_mineupdata_music">我的上传</string>
+
+    <string name="tv_update1_music">色情</string>
+    <string name="tv_update2_music">不良信息</string>
+    <string name="tv_update3_music">广告</string>
+    <string name="tv_update4_music">歌名不符合歌曲内容</string>
+
+
+    <string name="title_mymusic">本地音乐</string>
+    <string name="title_myupdate">我的上传</string>
+
+
+    <string name="title_find">发现</string>
+    <string name="tv_name_find">实名认证</string>
+    <string name="tv_five_find">5星好评送浪花</string>
+    <string name="tv_att_find"> 惊涛语音使用手册</string>
+    <string name="tv_send_find">公众号送浪花</string>
+    <string name="tv_share_find">邀请大作战</string>
+
+    <string name="title_radioda">广播交友</string>
+    <string name="title_myinviteshow">我的邀请奖励</string>
+    <string name="tv_type_myinviteshow">满%d可提现</string>
+
+    <string name="title_inviteraking">邀请奖励排行榜</string>
+    <string name="title_inviteaward">我的分成详情</string>
+
+    <string name="title_realname">实名认证</string>
+    <string name="hint_name_realname">请输入您的真实姓名</string>
+    <string name="hint_idcard_realname">请输入您的身份证号码</string>
+    <string name="hint_realname">请先同意《实名认证协议》</string>
+    <string name="tv_show_realname">1. 请填写真实姓名、身份证号、手机号码，如填写错误或误导信息，
+        审核将被驳回。 \n2. 验证后，我们将对被认定为未成年人（即年龄小于18周岁）的用户，
+        提供适合未成年人的内容。 \n3. 若上传其他非验证信息的内容，平台将会视情况对账号进行封禁处理。
+        \n4. 在一定时段内，未经认证审核的用户，将会被认定为未成年人，无法使用APP部分功能。
+        \n5. 本实名认证仅用于优化未成年人在 惊涛语音游览的内容以及体验，不作为找回账号等其他要求的凭证，平台不会用于其他用途。</string>
+
+
+    <string name="title_message">消息</string>
+    <string name="title_plaza">公聊大厅</string>
+    <string name="title_friend">好友</string>
+    <string name="tv_invite_friend">邀请好友</string>
+    <string name="tv_invitee">邀请</string>
+    <string name="tv_more_friend">多选</string>
+    <string name="tv_myfriend_friend">我的好友</string>
+    <string name="hint_nodata_friend">您还没有好友哟！\n互相关注可成为好友~</string>
+
+
+    <string name="title_mine">我的</string>
+
+
+    <string name="title_personhome">个人主页</string>
+    <string name="tv_chat_personhome">聊天</string>
+    <string name="tv_attention_personhome">关注</string>
+    <string name="tv_find_personhome">去找TA</string>
+    <string name="tv_room_personhome">TA的房间</string>
+    <string name="tv_cons_personhome">星座</string>
+    <string name="tv_signer_personhome">个性签名</string>
+    <string name="tv_signers_personhome">声音签名</string>
+    <string name="tv_change_personhome">录音签名</string>
+    <string name="tv_changefrist_personhome">录制</string>
+    <string name="tv_prop_personhome">道具</string>
+    <string name="hint_prop_personhome">暂没有道具</string>
+    <string name="tv_gift_personhome">礼物</string>
+    <string name="hint_gift_personhome">暂没有礼物</string>
+    <string name="hint_signer_personhome">这家伙很懒，还没有编辑个性签名~</string>
+    <string name="tv_price_personhome">按价值</string>
+    <string name="tv_number_personhome">按数量</string>
+    <string name="hint_img_personhome">这家伙很懒，还没有上传相片哦~</string>
+
+
+    <string name="title_data">编辑资料</string>
+    <string name="tv_header_data">头像</string>
+    <string name="tv_nickname_data">昵称</string>
+    <string name="tv_sex_data">性别</string>
+    <string name="tv_birthday_data">生日</string>
+    <string name="tv_signer_data">个性签名</string>
+    <string name="hint_signer_data">快来编辑签名，让更多人了解你</string>
+    <string name="hint_nickname_data">请输入你的昵称</string>
+    <string name="tv_use_data">使用中</string>
+    <string name="tv_success_data">修改资料成功</string>
+    <string name="tv_ju_data">举报</string>
+    <string name="tv_hei_data">拉黑</string>
+
+    <string name="tv_wallet_mine">我的钱包</string>
+    <string name="tv_you_wallet">我的浪花</string>
+    <string name="tv_topup_wallet">充值浪花</string>
+
+    <string name="tv_get_wallet">我的收益</string>
+    <string name="tv_diamond_wallet">我的收入</string>
+
+    <string name="tv_draw_get">提现</string>
+    <string name="tv_show_draw">请输入提现额度</string>
+    <string name="tv_get_draw">立即提现</string>
+    <string name="tv_gui_draw">提现规则</string>
+    <string name="tv_bind_draw">请绑定您的支付宝账号</string>
+
+    <string name="title_bindalipay">绑定支付宝</string>
+    <string name="title_changealipay">修改支付宝</string>
+    <string name="tv_alipay_bindalipay">支付宝</string>
+    <string name="tv_name_bindalipay">姓名</string>
+    <string name="hint_alipay_bindalipay">请输入您的支付宝账号</string>
+    <string name="hint_name_bindalipay">请输入实名认证的真实姓名</string>
+    <string name="hint_code_bindalipay">请输入验证码</string>
+    <string name="tv_bind">确认绑定</string>
+
+    <string name="tv_chnage_get">兑换浪花 兑换有奖</string>
+
+    <string name="title_exchangeyou">兑换浪花</string>
+    <string name="hint_number_exchangeyou">请输入兑换的数量</string>
+    <string name="tv_end_exchangeyou">余额：</string>
+    <string name="tv_sure_exchangeyou">确认兑换</string>
+    <string name="tv_showone_exchangeyou">单次兑换达到100浪花，额外爆浪花或座驾 \n单次兑换浪花越多，爆大奖概率越高</string>
+    <string name="tv_showtwo_exchangeyou">钻石可以兑换浪花，兑换比率：10钻石=10浪花 \n钻石数量必须是10的整数倍</string>
+
+    <string name="tv_bill_wallet">账单</string>
+
+    <string name="tv_gift_bill">礼物记录</string>
+    <string name="tv_get_gift">收入</string>
+    <string name="tv_sendone_gift">送出</string>
+    <string name="tv_topup_bill">充值记录</string>
+    <string name="tv_draw_bill">提现记录</string>
+    <string name="tv_share_bill">邀请记录</string>
+
+
+    <string name="tv_topup_mine">充值</string>
+    <string name="tv_alipay_topup">支付宝支付</string>
+    <string name="tv_weichat_topup">微信支付</string>
+
+    <string name="tv_grade_mine">我的等级</string>
+    <string name="tv_cai_grade">财富等级</string>
+    <string name="tv_mei_grade">魅力等级</string>
+    <string name="tv_te_grade">等级特权</string>
+    <string name="tv_cai_gradeshow">财富等级说明</string>
+    <string name="tv_mei_gradeshow">魅力等级说明</string>
+    <string name="tv_grademei_gradeshow">等级勋章</string>
+    <string name="tv_lei_gradeshow">累积财富值</string>
+    <string name="tv_show_gradeshow">要求财富值</string>
+
+
+    <string name="tv_store_mine">道具商城</string>
+    <string name="tv_tou_store">头饰</string>
+    <string name="tv_zuo_store">座驾</string>
+    <string name="tv_forus_store">为自己购买</string>
+    <string name="tv_send_store">赠送TA人</string>
+
+    <string name="title_send">赠送</string>
+    <string name="tv_friend_send">好友</string>
+    <string name="tv_attention_send">关注</string>
+
+    <string name="tv_myroom_mine">我的房间</string>
+
+
+    <string name="tv_setting_mine">设置</string>
+    <string name="tv_safety_setting">账号安全</string>
+    <string name="tv_bindphone_setting">手机绑定</string>
+    <string name="tv_bindphone">绑定手机号</string>
+
+    <string name="tv_paypass_setting">支付密码</string>
+    <string name="tv_changepass_setting">修改密码</string>
+    <string name="tv_changepass1_setting">设置密码</string>
+    <string name="tv_oldpass_changepass">原密码</string>
+    <string name="hint_oldpass_changepass">请输入原登录密码</string>
+    <string name="tv_newpass_changepass">新密码</string>
+    <string name="hint_newpass_changepass">6–20位英文字母或数字</string>
+    <string name="tv_repass_changepass">确认密码</string>
+    <string name="hint_repass_changepass">请确认新密码</string>
+    <string name="tv_sure_changepass">确认修改</string>
+
+    <string name="title_changephone">更换绑定</string>
+    <string name="tv_oldphone_changephone">原手机号</string>
+    <string name="hint_phone_changephone">请输入您原来绑定的号码</string>
+    <string name="tv_newphone_changephone">手机号</string>
+    <string name="hint_newphone_changephone">请填写您绑定的手机号</string>
+    <string name="tv_sure_changephone">确认绑定</string>
+
+
+    <string name="hint_pass_paypass">请输入6位数字密码</string>
+    <string name="hint_pass1_paypass">请再次输入密码</string>
+
+
+    <string name="tv_black_setting">黑名单</string>
+    <string name="tv_scan_setting">扫一扫</string>
+
+    <string name="tv_opinion_setting">意见反馈</string>
+    <string name="tv_start_opinion">还可以输入</string>
+    <string name="tv_end_opinion">字</string>
+    <string name="hint_show_opinion">请详细描述您所遇到的问题与情况，感谢您提出宝贵的意见，期待 你的心声！</string>
+    <string name="hint_show1_opinion">请留下您的联系方式（手机号）</string>
+    <string name="hint_show2_opinion">您的联系方式有助于我们沟通和解决问题，仅工作人员可见</string>
+
+
+    <string name="tv_service_setting">联系官方</string>
+    <string name="tv_help_setting">帮助</string>
+    <string name="tv_forus_setting">关于 惊涛语音</string>
+    <string name="tv_version_setting">当前版本</string>
+
+
+    <string name="tv_attention_mine">关注</string>
+
+    <string name="title_attention">我的关注</string>
+
+    <string name="tv_fans_mine">粉丝</string>
+    <string name="title_fans">粉丝</string>
+
+
+    <string name="title_login">欢迎来到惊涛语音</string>
+    <string name="tv_phone_login">手机号码</string>
+    <string name="hint_phone_login">请输入手机号</string>
+    <string name="hint_newphone_login">请输入新手机号</string>
+    <string name="tv_psd_login">密码</string>
+    <string name="tv_register_login">立即注册</string>
+    <string name="tv_registertwo_login">免费注册</string>
+    <string name="tv_forget_login">忘记密码?</string>
+    <string name="tv_login">确认提交</string>
+    <string name="tv_other_login">使用第三方登录</string>
+    <string name="hint_psd_login">请输入密码</string>
+    <string name="hint_setpsd_login">请设置登录密码</string>
+
+    <string name="title_forgetpass">忘记密码</string>
+    <string name="tv_phone_forgetpass">手机号</string>
+    <string name="hint_phone_forgetpass">请输入注册手机号</string>
+    <string name="tv_code_forgetpass">验证码</string>
+    <string name="hint_code_forgetpass">请输入验证码</string>
+    <string name="tv_getcode_forgetpass">获取验证码</string>
+    <string name="tv_newpass_forgetpass">新密码</string>
+    <string name="hint_newpass_forgetpass">请输入6-20位英文字母或数字</string>
+    <string name="hint_passchange_forgetpass">密码修改成功</string>
+
+    <string name="title_register">欢迎注册</string>
+    <string name="hint_phone_register">请输入您手机号码</string>
+    <string name="hint_checkone_register">阅读并同意</string>
+    <string name="hint_checktwo_register">《 惊涛语音用户协议》</string>
+    <string name="hint_psdall_register">请输入6-20位英文字母或数字</string>
+
+    <string name="title_datainput">填写基本资料</string>
+    <string name="hint_nickname_datainput">请填写您的昵称</string>
+    <string name="hint_shareone_datainput">请输入邀请码（非必填）</string>
+    <string name="tv_nickname_datainput">昵称</string>
+    <string name="tv_birthday_datainput">出生年月</string>
+    <string name="tv_share_datainput">邀请码</string>
+    <string name="hint_birthday_datainput">请选择</string>
+    <string name="hint_sex_datainput">请选择您的性别</string>
+    <string name="tv_man_datainput">男生</string>
+    <string name="tv_woman_datainput">女生</string>
+    <string name="tv_or_datainput">or</string>
+    <string name="tv_sex_datainput">注：性别后期不可修改</string>
+    <string name="hint_img_datainput">请上传头像</string>
+
+    <string name="hint_oldphone_changephone">请输入您手机号码</string>
+    <string name="hint_phone11_changephone">请输入11位手机号</string>
+    <string name="record_apply">申请记录</string>
+    <string name="voice_sign">声音签名</string>
+    <string name="tv_wanfa">玩法</string>
+    <string name="tv_wanfa1">1.玩家根据探险次数消耗对应浪花，连续探险获得礼物概率更高\n2.探险获得礼物可以在礼物列表查看</string>
+    <string name="tv_wanfa2">官方声明</string>
+    <string name="tv_wanfa3">1.探险仅供娱乐使用，用户获得礼物奖励只能在平台消费；\n2.所有用户请通过官方渠道参与本玩法、禁止一切线下交易；\n3.如用非正当渠道获得礼物和浪花，用户承担不利后果；\n4.任何影响互动公平性的操作，平台有权取消用户违规活动的奖励，有权向情节严重违规用户索赔并追求相关法律。\n5.本活动与苹果公司无关</string>
+    <string name="tv_wanfa4">玩法\n1.玩家根据探险次数消耗对应浪花，连续探险获得礼物概率更高\n2.探险获得礼物可以在礼物列表查看\n\n官方声明\n1.探险仅供娱乐使用，用户获得礼物奖励只能在平台消费；\n2.所有用户请通过官方渠道参与本玩法、禁止一切线下交易；\n3.如用非正当渠道获得礼物和浪花，用户承担不利后果；\n4.任何影响互动公平性的操作，平台有权取消用户违规活动的奖励，有权向情节严重违规用户索赔并追求相关法律。\n5.本活动与苹果公司无关</string>
+    <string name="realtime_remark">活动需知:实时奖池为官方单独让利的一个福利，实时奖池累\n积的金额将会在每晚20点~24点以礼物的形式派送出去</string>
+    <string name="realtime_remark1">Ps:当日钻石蛋投入的金额越高，获得礼物的概率越大</string>
+    <string name="realtime_detail">查看实时奖池</string>
+    <string name="realtime_jiang"><u>查看实时奖池</u></string>
+    <string name="fortune"><u>锦鲤之星</u></string>
+    <string name="fortune_normal"><u>天选之人</u></string>
+    <string name="realtime_remark_red" >注:4个小时每小时必出一个天选，如今日只有3个天选礼物，前三小时中每小时必出，以此类推2个天选，前两小时每小时必出！</string>
+
+
+</resources>

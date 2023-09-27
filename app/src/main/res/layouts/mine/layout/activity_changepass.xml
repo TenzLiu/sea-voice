@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_oldpass_changepass"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_oldpass_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/hint_oldpass_changepass"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_newpass_changepass"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_newpass_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/hint_newpass_changepass"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_repass_changepass"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_repass_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/hint_repass_changepass"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forgetpass_changepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_forget_login"
+        android:textColor="@color/black6" />
+
+    <Button
+        android:id="@+id/btn_sure_changepass"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:text="保存" />
+</LinearLayout>

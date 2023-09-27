@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/zhi1"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/zhi2"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/zhi3"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/zhi4"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/zhi5"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/zhi6"
+        android:duration="300" />
+
+</animation-list>

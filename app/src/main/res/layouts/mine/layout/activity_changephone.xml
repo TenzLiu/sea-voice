@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_oldphone_changephone"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_oldphone_changephone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            android:hint="@string/hint_phone_changephone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/dp_5" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_newphone_changephone"
+        android:textColor="#1C2023"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textSize="@dimen/sp_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_newphone_changephone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_5"
+            android:background="@color/lucency"
+            android:hint="@string/hint_newphone_changephone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_code_forgetpass"
+        android:textColor="#1C2023"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textSize="@dimen/sp_12" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_14">
+
+
+        <EditText
+            android:id="@+id/edt_repass_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            android:hint="@string/hint_code_bindalipay"
+            android:inputType="number"
+            android:padding="@dimen/dp_5"
+            android:maxLength="6"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_getcode_changephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/getcode_bg"
+            android:layout_centerVertical="true"
+            android:paddingVertical="@dimen/dp_5"
+            android:paddingHorizontal="@dimen/dp_7"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/tv_getcode_forgetpass"
+            android:textColor="#2980B9"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_sure_changephone"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:text="确认" />
+</LinearLayout>

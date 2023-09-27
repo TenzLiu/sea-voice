@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:padding="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/title_register"
+        android:textColor="#2B2B2B"
+        android:textSize="@dimen/sp_28"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_phone_forgetpass"
+                android:textColor="#1C2023"
+                app:layout_constraintBaseline_toBaselineOf="@id/edt_phone_register"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toStartOf="@id/edt_phone_register"
+                android:layout_marginEnd="@dimen/dp_18"
+                />
+            <EditText
+                android:id="@+id/edt_phone_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lucency"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_phone_register"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/dp_110"
+                android:layout_marginEnd="@dimen/dp_31"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_14"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingBottom="@dimen/dp_13"
+                tools:ignore="TextFields" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_0.5"
+                android:background="@color/bg_line"
+                app:layout_constraintTop_toBottomOf="@id/edt_phone_register"
+                app:layout_constraintStart_toStartOf="@id/edt_phone_register"
+                app:layout_constraintEnd_toEndOf="@id/edt_phone_register"/>
+
+            <EditText
+                android:id="@+id/edt_psd_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/lucency"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_code_forgetpass"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/edt_phone_register"
+                app:layout_constraintStart_toStartOf="@id/edt_phone_register"
+                app:layout_constraintEnd_toEndOf="@id/edt_phone_register"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingBottom="@dimen/dp_13"
+                android:layout_marginTop="@dimen/dp_14"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="TextFields" />
+            <TextView
+                android:id="@+id/tv_getcode_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_5"
+                android:paddingHorizontal="@dimen/dp_7"
+                android:background="@drawable/getcode_bg"
+                android:layout_centerVertical="true"
+                android:text="@string/tv_getcode_forgetpass"
+                android:textColor="#4BA6DC"
+                app:layout_constraintEnd_toEndOf="@id/edt_psd_register"
+                app:layout_constraintBaseline_toBaselineOf="@id/edt_psd_register"
+                android:textSize="@dimen/sp_12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/tv_code_forgetpass"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#000103"
+                app:layout_constraintBaseline_toBaselineOf="@id/edt_psd_register"
+                app:layout_constraintEnd_toEndOf="@id/tv_phone_title"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_15"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_0.5"
+                android:background="@color/bg_line"
+                app:layout_constraintTop_toBottomOf="@id/edt_psd_register"
+                app:layout_constraintStart_toStartOf="@id/edt_phone_register"
+                app:layout_constraintEnd_toEndOf="@id/edt_phone_register"/>
+            <EditText
+                android:id="@+id/edt_newpass_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lucency"
+                android:digits="@string/tv_digits"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_newpass_forgetpass"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/dp_14"
+                app:layout_constraintTop_toBottomOf="@id/edt_psd_register"
+                app:layout_constraintStart_toStartOf="@id/edt_phone_register"
+                app:layout_constraintEnd_toEndOf="@id/edt_phone_register"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingBottom="@dimen/dp_13"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="TextFields" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="设置密码"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#000103"
+                app:layout_constraintEnd_toEndOf="@id/tv_phone_title"
+                app:layout_constraintBaseline_toBaselineOf="@id/edt_newpass_register"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_15"/>
+            <ImageView
+                android:id="@+id/iv_show_register"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:src="@drawable/selector_pass" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_0.5"
+                android:background="@color/bg_line"
+                app:layout_constraintTop_toBottomOf="@id/edt_newpass_register"
+                app:layout_constraintStart_toStartOf="@id/edt_phone_register"
+                app:layout_constraintEnd_toEndOf="@id/edt_phone_register"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_110"
+        android:layout_marginStart="@dimen/dp_44"
+        android:layout_marginEnd="@dimen/dp_31"
+        android:text="@string/tv_register_login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_check_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/selector_checkbox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_checkone_register"
+            android:textColor="#000103"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_agreement_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_clicker"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="@string/hint_checktwo_register"
+            android:textColor="#4BA6DC"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

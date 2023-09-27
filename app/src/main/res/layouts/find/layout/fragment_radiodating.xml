@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView_radiodating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_50">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_newdata_radiodating"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@color/FFE5EB"
+        android:gravity="center"
+        android:text="底部有新消息"
+        android:textColor="@color/FF003F"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_radiodating"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_input_radiodating"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_f2"
+            android:hint="@string/hint_chat_voice"
+            android:paddingStart="@dimen/dp_7"
+            android:paddingEnd="@dimen/dp_7"
+            android:textColor="@color/textColor1A"
+            android:textSize="@dimen/sp_12" />
+
+        <Button
+            android:id="@+id/btn_send_radiodating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:background="@drawable/bg_round4_red"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_60"
+            android:text="@string/tv_send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</RelativeLayout>

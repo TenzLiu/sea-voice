@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vdh_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <com.siyecaoi.yy.view.MyViewPager
+            android:id="@+id/myViewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.siyecaoi.yy.view.MyViewPager>
+
+        <include layout="@layout/view_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_49"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_home"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:text="@string/title_home"
+                android:textColor="@color/nav_noselct_color"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/tv_find"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_friend"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:text="广播交友"
+                android:textColor="@color/nav_noselct_color"
+                android:textSize="@dimen/sp_10" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/selector_goods"
+                    android:drawablePadding="@dimen/dp_3"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:text="@string/title_message"
+                    android:textColor="@color/nav_noselct_color"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv_number_main"
+                    android:layout_width="@dimen/dp_13"
+                    android:layout_height="@dimen/dp_13"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp_30"
+                    android:background="@drawable/bg_round_red"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_mine"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_finance"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:text="@string/title_mine"
+                android:textColor="@color/nav_noselct_color"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_room_main"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="64dp"
+        android:background="@drawable/minimize_bg_left"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_roomname_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_70"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="--"
+                android:layout_marginTop="@dimen/dp_12"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_roomid_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_roomname_main"
+                android:layout_alignStart="@id/tv_roomname_main"
+                android:layout_alignEnd="@id/tv_roomname_main"
+                android:text=""
+                android:layout_marginTop="@dimen/dp_2"
+                android:drawableLeft="@drawable/icon_renqi"
+                android:drawablePadding="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/iv_closeroom_main"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/popup_packet_close" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_centerVertical="true">
+
+            <com.siyecaoi.yy.view.ShapeImageView
+                android:id="@+id/iv_roomshow_main"
+                fresco:shape="Circle"
+                android:layout_width="@dimen/dp_52"
+                android:layout_height="@dimen/dp_52"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

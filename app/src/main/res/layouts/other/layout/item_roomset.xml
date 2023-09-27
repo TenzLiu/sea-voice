@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_show_mark"
+    android:layout_width="@dimen/dp_60"
+    android:layout_height="@dimen/dp_26"
+    android:layout_marginEnd="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:background="@drawable/bg_round2_f4f"
+    android:gravity="center"
+    android:textSize="@dimen/sp_12">
+
+</TextView>

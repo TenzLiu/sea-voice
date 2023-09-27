@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView_chat_voice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_17">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_above="@id/iv_dinghaiFishing"
+                android:id="@+id/iv_donghaiFishing"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_42"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:src="@mipmap/icon_donghai_fishing_entrance_new"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/iv_dinghaiFishing"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:src="@mipmap/icon_dinghai_fishing_entrance_new"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/iv_deepSeaFishing"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:src="@mipmap/icon_deep_sea_fishing_entrance_new"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_has_message_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_round_white"
+            android:padding="@dimen/dp_8"
+            android:text="@string/tv_new_message"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_13"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_voice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_6"
+        android:paddingEnd="@dimen/dp_5">
+
+        <LinearLayout
+            android:id="@+id/chart_ll"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_music"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_30">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="说点什么"
+                android:gravity="center"
+                android:textColor="@color/white_color"
+                android:textSize="10sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_message_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:src="@drawable/bottom_message" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_mic_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/selector_mic" />
+
+        <ImageView
+            android:id="@+id/iv_receiver_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/selector_receiver" />
+
+        <ImageView
+            android:id="@+id/iv_express_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/bottom_express"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_envelope_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/bottom_envelope" />
+
+        <View
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_getpacket_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/kai"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_packet_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/bottom_packet"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_gift_voice"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/bottom_gift" />
+    </LinearLayout>
+</LinearLayout>

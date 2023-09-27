@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/title_bar_size"
+    android:paddingBottom="3dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@mipmap/back"
+        android:textSize="@dimen/textSize"
+        android:singleLine="true"
+        android:maxWidth="80dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColor"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="8dp"/>
+    <EditText
+        android:id="@+id/titleView"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/textColor"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize_20"/>
+</FrameLayout>

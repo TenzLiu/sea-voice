@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_back_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_110"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/triangle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round5_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingBottom="@dimen/dp_7">
+
+            <TextView
+                android:id="@+id/tv_updata_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_clicker"
+                android:drawableStart="@drawable/local"
+                android:drawablePadding="@dimen/dp_3"
+                android:paddingStart="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_7"
+                android:text="@string/tv_updata_music" />
+
+            <TextView
+                android:id="@+id/tv_mine_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_clicker"
+                android:drawableStart="@drawable/music1"
+                android:drawablePadding="@dimen/dp_3"
+                android:paddingStart="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_7"
+                android:text="@string/tv_mine_music" />
+
+            <TextView
+                android:id="@+id/tv_mineupdata_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_clicker"
+                android:drawableStart="@drawable/upload1"
+                android:drawablePadding="@dimen/dp_3"
+                android:paddingStart="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_7"
+                android:text="@string/tv_mineupdata_music" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

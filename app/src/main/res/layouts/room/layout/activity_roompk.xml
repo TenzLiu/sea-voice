@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/white"
+        android:elevation="@dimen/dp_3">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_50"
+            android:background="@drawable/add_photo">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_one_roompk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/text_ff0"
+                fresco:roundingBorderWidth="2dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_pk_roompk"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PK"
+            android:textColor="@color/black8"
+            android:textSize="@dimen/dp_20" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:background="@drawable/add_photo">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_two_roompk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/text_ff0"
+                fresco:roundingBorderWidth="2dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_type_roompk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/bg_clicker">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="PK类型"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_type_price_roompk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawableEnd="@drawable/list_arrows"
+            android:drawablePadding="@dimen/dp_19"
+            android:text="@string/tv_type_price_roompk"
+            android:textColor="@color/black8" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_time_roompk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/bg_clicker">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="@string/tv_time_roompk"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time_price_roompk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawableEnd="@drawable/list_arrows"
+            android:drawablePadding="@dimen/dp_19"
+            android:text="60秒"
+            android:textColor="@color/black8" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <Button
+        android:id="@+id/btn_affirm_roompk"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:alpha="0.5"
+        android:text="@string/tv_affirm" />
+</LinearLayout>

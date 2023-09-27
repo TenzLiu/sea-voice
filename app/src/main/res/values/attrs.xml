@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XCircleIndicator">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="fillColor" format="color" />
+        <!-- 未选中圆点的颜色 -->
+        <attr name="strokeColor" format="color" />
+        <!-- 圆点的大小 -->
+        <attr name="radius" format="dimension" />
+        <!-- 圆点间间距的大小 -->
+        <attr name="circleInterval" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwipeFlingView">
+        <attr name="rotation_degrees" format="float" />
+        <attr name="min_adapter_stack" format="integer" />
+        <attr name="max_visible" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="rlRadius" format="dimension" />
+        <attr name="rlClipBackground" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="shape" format="enum">
+            <enum name="Circle" value="0" />
+            <enum name="Rectangle" value="1" />
+            <enum name="RoundRectangle" value="2" />
+        </attr>
+        <attr name="textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="siRadius" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelSurfPanView">
+        <!--类型 根据类型来加载资源 1 默认类型 用户需要提供文字和图片 2 暴力模式 用户只需要提供一张圆形的用来旋转的图片-->
+        <attr name="type" format="integer" />
+        <!--最低圈数 默认值3 也就是说每次旋转都会最少转3圈-->
+        <attr name="minTimes" format="integer" />
+        <!--扇形的数量 也就是奖品的份数-->
+        <attr name="typenum" format="integer" />
+        <!--每一个扇形旋转消耗的时间-->
+        <attr name="vartime" format="integer" />
+        <!--类型为1的时候 需要提供每个扇形上面的文字描述 长度必须和typenum一致-->
+        <attr name="deses" format="reference" />
+        <!--类型为1的时候 需要提供每个扇形上面的图片展示 长度必须和typenum一致-->
+        <attr name="icons" format="reference" />
+        <!--类型为1的时候 需要提供每个扇形背景颜色 长度必须和typenum一致-->
+        <attr name="colors" format="reference" />
+        <!--中间图片的引用 有默认值 不填则使用默认值-->
+        <attr name="goImg" format="reference" />
+        <!--圆环的图片引用 有默认值 不填则使用默认值-->
+        <attr name="huanImg" format="reference" />
+        <!--如果类型为2 此值必填-->
+        <attr name="mainImg" format="reference" />
+        <!--文字大小-->
+        <attr name="mTextSize" format="dimension" />
+        <!--文字颜色-->
+        <attr name="mTextColor" format="reference|color" />
+    </declare-styleable>
+
+</resources>

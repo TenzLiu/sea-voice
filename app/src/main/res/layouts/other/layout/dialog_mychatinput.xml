@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/edt_input_mychat"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_weight="1"
+        android:background="@drawable/bg_chat_f2"
+        android:hint="@string/hint_chat_voice"
+        android:paddingEnd="@dimen/dp_7"
+        android:paddingStart="@dimen/dp_7"
+        android:textColor="@color/textColor1A"
+        android:textSize="@dimen/sp_12" />
+
+    <Button
+        android:id="@+id/btn_send_mychat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/bg_round4_red"
+        android:gravity="center"
+        android:minWidth="@dimen/dp_60"
+        android:text="@string/tv_send"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

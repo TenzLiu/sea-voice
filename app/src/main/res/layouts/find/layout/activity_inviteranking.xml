@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_52"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="match_parent"
+                android:background="@color/FF003F" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_14"
+                android:layout_weight="1"
+                android:text="分享有奖励，邀请有惊喜"
+                android:textColor="@color/black8"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_share_inviteranking"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_26"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@drawable/bg_round5_ffo1"
+                android:gravity="center"
+                android:text="立即分享"
+                android:textColor="@color/FF003F"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/top_back" />
+    </RelativeLayout>
+
+
+    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_50">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/bg_red_g" />
+
+            <RelativeLayout
+                android:id="@+id/rl_show_inviteranking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_110"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:background="@drawable/bg">
+
+                <TextView
+                    android:id="@+id/tv_ranking_inviteranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:drawableStart="@drawable/ranking"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="排名："
+                    android:textColor="@color/black6"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_mon_inviteranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:drawableStart="@drawable/bounty"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="奖励金："
+                    android:textColor="@color/black6"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_header_inviteranking"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_14"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/default_head"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundingBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tv_nickname_inviteranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_header_inviteranking"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="--"
+                android:textColor="@color/textColor3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView_inviteranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_show_inviteranking"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_50">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+</RelativeLayout>

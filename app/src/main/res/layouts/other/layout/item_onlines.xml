@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:background="@drawable/bg_clicker"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_onlines"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/default_head"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true" />
+
+    <ImageView
+        android:id="@+id/iv_sex_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/iv_show_onlines"
+        android:layout_alignBottom="@id/iv_show_onlines"
+        android:visibility="gone"
+        android:src="@drawable/selector_man" />
+
+    <TextView
+        android:id="@+id/tv_name_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_show_onlines"
+        android:layout_marginStart="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toEndOf="@id/iv_show_onlines"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_150"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="罗明文"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_leave_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_onlines"
+        android:layout_alignStart="@id/tv_name_onlines"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@drawable/bg_round2_gray"
+        android:padding="@dimen/dp_3"
+        android:text="暂时离开"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_8"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_line" />
+
+    <TextView
+        android:id="@+id/tv_setone_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_toEndOf="@id/tv_name_onlines"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_time_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_setone_onlines"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_endcenter_onlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_ff0"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_clear_onlines"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_green_line_12dp"
+        android:gravity="center"
+        android:text="移除黑名单"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#2980B9"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/shangmai_tv"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_green_line_12dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:text="抱Ta上麦"
+        android:textColor="@color/tvCommon"
+        android:visibility="gone"
+
+        />
+</RelativeLayout>

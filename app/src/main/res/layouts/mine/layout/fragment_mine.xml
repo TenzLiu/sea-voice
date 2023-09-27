@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rv_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_11"
+            android:paddingEnd="@dimen/dp_11">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_62">
+                <RelativeLayout
+                    android:id="@+id/rv_head"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="@dimen/dp_92"
+                    android:layout_height="@dimen/dp_92">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_show_mine"
+                        android:layout_width="@dimen/dp_72"
+                        android:layout_height="@dimen/dp_72"
+                        android:layout_centerInParent="true"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImage="@drawable/default_head"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        fresco:roundAsCircle="true" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_headwear_mine"
+                        android:layout_width="@dimen/dp_92"
+                        android:layout_height="@dimen/dp_92" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_nickname_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:maxHeight="@dimen/dp_300"
+                    android:maxLines="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/rv_head"
+                    android:layout_marginStart="8dp"
+                    android:singleLine="true"
+                    android:text="--"
+                    tools:text = "来哈杯啤酒吧"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/iv_panit_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:drawablePadding="8dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_nickname_mine"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tv_nickname_mine"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/sp_12"
+                    android:drawableStart="@drawable/me_edit" />
+                <TextView
+                    android:id="@+id/iv_sex_mine"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_18"
+                    android:background="@drawable/bg_mine_sex1"
+                    android:drawableLeft="@drawable/sex_female_small"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:text="0岁"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintStart_toStartOf="@id/tv_nickname_mine"
+                    app:layout_constraintTop_toBottomOf="@id/tv_nickname_mine"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:textSize="@dimen/sp_10" />
+                <TextView
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:background="@drawable/bg_mine_sex1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_1"
+                    app:layout_constraintTop_toTopOf="@id/iv_sex_mine"
+                    app:layout_constraintStart_toEndOf="@id/iv_sex_mine"
+                    android:text="水瓶座"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp_10" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:layout_constraintTop_toBottomOf="@id/iv_sex_mine"
+                    app:layout_constraintStart_toStartOf="@id/tv_nickname_mine"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/liang_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:src="@drawable/liang_id"/>
+                    <TextView
+                        android:id="@+id/tv_id_mine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_3"
+                        android:text="ID："
+                        android:textColor="@color/textColor9"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/center"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/center_dash"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_attention_mine"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_attention_mine"/>
+                <TextView
+                    android:id="@+id/tv_attention_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="0"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/center"
+                    android:layout_marginEnd="@dimen/dp_60"
+                    app:layout_constraintTop_toBottomOf="@id/rv_head"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tv_attention_mine"
+                    app:layout_constraintEnd_toStartOf="@id/tv_attention_mine"
+                    android:layout_marginEnd="@dimen/dp_14"
+                    android:textColor="@color/textColor9"
+                    android:textSize="@dimen/sp_12" />
+                <TextView
+                    android:id="@+id/tv_fans_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="0"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/center"
+                    android:layout_marginStart="@dimen/dp_105"
+                    app:layout_constraintTop_toBottomOf="@id/rv_head"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="粉丝"
+                    android:layout_marginEnd="@dimen/dp_14"
+                    android:textColor="@color/textColor9"
+                    app:layout_constraintEnd_toStartOf="@id/tv_fans_mine"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_mine"
+                    android:textSize="@dimen/sp_12" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F4F9FC"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/rv_top"/>
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_below="@id/rv_top"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_1">
+
+            <com.siyecaoi.yy.view.RoundRelativeLayout
+                android:id="@+id/rl_mywallet_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13"
+                app:rlClipBackground="true"
+                app:rlRadius="@dimen/dp_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/me_wallet"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/tv_wallet_mine"
+                     />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/list_arrows" />
+            </com.siyecaoi.yy.view.RoundRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividing_line_color"
+                android:layout_marginHorizontal="@dimen/dp_15"/>
+            <RelativeLayout
+                android:id="@+id/rl_grade_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_grade"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="@string/tv_grade_mine"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividing_line_color"
+                android:layout_marginHorizontal="@dimen/dp_15"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_topup_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_recharge"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/tv_topup_mine"
+                     />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line" android:visibility="gone"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_store_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_shop"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/tv_store_mine"
+                    android:gravity="center"
+                     />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividing_line_color"
+                android:layout_marginHorizontal="@dimen/dp_15"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:background="@color/dividing_line_color"
+                android:layout_marginHorizontal="@dimen/dp_15"/>
+            <RelativeLayout
+                android:id="@+id/rl_topup_real"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_recharge"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/title_realname"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myroom_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_room"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/tv_myroom_mine"
+                     />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line" />
+            <RelativeLayout
+                android:id="@+id/rl_about_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_about"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="关于我们"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+            <include layout="@layout/view_line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/bg_clicker"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_13"
+                android:paddingEnd="@dimen/dp_13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:drawableStart="@drawable/me_set"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/tv_setting_mine"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/list_arrows" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

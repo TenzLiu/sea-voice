@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_title_topic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/lucency"
+        android:hint="@string/hint_topic_topic"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:singleLine="true"
+        android:textColor="@color/C1C2023"
+        android:textColorHint="@color/C1C2023"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/bg_line" />
+
+    <EditText
+        android:id="@+id/edt_content_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lucency"
+        android:hint="@string/hint_content_topic"
+        android:maxLength="500"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_14"
+        android:textColor="@color/C1C2023"
+        android:textColorHint="@color/C1C2023"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_store"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_5"
+    android:layout_marginVertical="@dimen/dp_5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_show_store"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_shop_uncheck"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_show_store"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginVertical="@dimen/dp_17"
+            android:layout_centerHorizontal="true"
+           />
+
+        <TextView
+            android:id="@+id/tv_time_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/bg_gift_store"
+            android:drawableStart="@drawable/tiome"
+            android:drawablePadding="@dimen/dp_3"
+            android:paddingStart="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingEnd="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_3"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_show_store"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="--"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12" />
+    <TextView
+        android:id="@+id/tv_gold_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:drawableStart="@drawable/gold"
+        android:layout_below="@+id/tv_name_store"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/dp_3"
+        android:text="--"
+        android:visibility="gone"
+        android:textColor="#1C2023"
+        android:textSize="@dimen/sp_12" />
+
+
+</RelativeLayout>

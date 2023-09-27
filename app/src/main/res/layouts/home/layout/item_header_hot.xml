@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_header_hot"
+        android:layout_width="@dimen/dp_165"
+        android:layout_height="@dimen/dp_165"
+        android:layout_centerHorizontal="true"
+        app:roundedCornerRadius="@dimen/dp_6" />
+
+    <TextView
+        android:id="@+id/tv_tag_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignStart="@id/iv_header_hot"
+        android:layout_alignBottom="@id/iv_header_hot"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:background="@drawable/bg_tag_blue1"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        android:text="--"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_aline_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/iv_header_hot"
+        android:layout_alignBottom="@id/iv_header_hot"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="--"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/tv_name_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_header_hot"
+        android:layout_alignStart="@id/iv_header_hot"
+        android:layout_alignEnd="@id/iv_header_hot"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/textColor3"
+        android:textSize="@dimen/sp_15" />
+</RelativeLayout>

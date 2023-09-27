@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:background="@drawable/bg"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_user_topup"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/default_head"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_name_topup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_toEndOf="@id/iv_user_topup" />
+
+        <TextView
+            android:id="@+id/tv_gold_topup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_topup"
+            android:layout_alignStart="@id/tv_name_topup"
+            android:layout_marginTop="@dimen/dp_3"
+            android:textColor="@color/black6"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="请选择充值金额"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_topupone_topup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_23"
+            android:background="@drawable/bg_round3_ff0"
+            android:paddingStart="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingEnd="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView_topup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_10">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

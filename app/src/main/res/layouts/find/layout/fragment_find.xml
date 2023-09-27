@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_26" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:gravity="center"
+        android:text="@string/title_find"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_broadcast_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/broadcast" />
+
+    <ImageView
+        android:id="@+id/iv_dis_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/discover_invite"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_com_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:src="@drawable/find_recommend" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingEnd="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_name_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/discover_attestation"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center_vertical"
+            android:text="@string/tv_name_find"
+            android:textColor="@color/black8"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_five_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/discover_praise"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center_vertical"
+            android:text="@string/tv_five_find"
+            android:textColor="@color/black8"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_att_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/discover_manual"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center_vertical"
+            android:text="@string/tv_att_find"
+            android:textColor="@color/black8"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_22"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingEnd="@dimen/dp_30">
+
+
+
+        <TextView
+            android:id="@+id/tv_send_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/discover_vipcn"
+            android:drawablePadding="@dimen/dp_9"
+            android:gravity="center_vertical"
+            android:text="@string/tv_send_find"
+            android:textColor="@color/black8"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

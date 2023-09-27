@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:background="#7df17795"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:text="@string/tv_hint_roomhint"
+        android:textColor="#FF003F"
+        android:textSize="@dimen/sp_10" />
+
+    <EditText
+        android:id="@+id/edt_show_roomhint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lucency"
+        android:gravity="top"
+        android:hint="@string/tv_show_roomhint"
+        android:minHeight="@dimen/dp_100"
+        android:maxLength="200"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingEnd="@dimen/dp_10"
+        android:textSize="@dimen/sp_12" />
+
+</LinearLayout>

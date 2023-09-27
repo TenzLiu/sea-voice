@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_name_drawhis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="--"
+        android:textColor="#000103"
+       android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_time_drawhis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_drawhis"
+        android:layout_marginTop="@dimen/dp_3"
+        android:text="--"
+        android:textColor="#9FA3B0"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_number_drawhis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/sp_14"
+        android:text="--"
+        android:textColor="#000103"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_type_drawhis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_number_drawhis"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_1"
+        android:text="--"
+        android:textColor="#9FA3B0"
+        android:textSize="@dimen/sp_12" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_line" />
+</RelativeLayout>

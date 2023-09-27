@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.siyecaoi.yy">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- //网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- //GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 通知权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Camera权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- //获取统计数据 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" /> <!-- //读取系统信息，包含系统版本等信息，用作统计 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" /> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序修改全局音频设置 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission
+        android:name="android.permission.GET_TOP_ACTIVITY_INFO"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:largeHeap = "true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.other.LancherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 消息收发 service 腾讯云 -->
+        <service
+            android:name="com.tencent.imsdk.session.remote.SessionService"
+            android:process=":network" /> <!-- 消息收发辅助 service -->
+        <service
+            android:name="com.tencent.imsdk.session.remote.AssistService"
+            android:process=":network" />
+        <service
+            android:name="com.tencent.imsdk.session.remote.KeepAliveJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":network" /> <!-- 离线消息广播接收器 -->
+        <receiver android:name="com.tencent.imsdk.session.SessionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.imsdk.session.boot" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- 极光推送服务 -->
+        <receiver
+            android:name=".control.MyTalkReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  收到了通知 Push -->
+                <category android:name="com.bxtech.yoyoyuyin" />
+            </intent-filter>
+        </receiver> <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="de711ece144a7041fe2520e45841a2a8" />
+
+        <activity
+            android:name=".ui.home.RadioDatingOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.RoomListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.RoomRevenueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.VoiceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.OnlinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.SetTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.RoomSetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.room.ThemeBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.RoomhintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.BlackRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.RoomAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.RoomPkSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.TopupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ForgetPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DataInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.other.SelectPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name=".ui.other.MyCropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.PacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.MusicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.room.PlaceMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.MyUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.PkHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.other.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.BillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.TopupHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.EarningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ExchangeYouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.StoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.MyAttentionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.ReceivePacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.PersonHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.RankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.ApplyRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.MatchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.PersonDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ShowPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.MyFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.NicknameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.SingerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.GiftHisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.DrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.BindAlipayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.DrawHisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.SafetyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.OpinionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.SendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ChangePassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.GradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.BlackUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ShareHisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.SendOtherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.fragment.GradeShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.CharmShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.message.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.message.MailListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.message.OtherHomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.InviteFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.PalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.RadioDatingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.find.MyInviteShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.MyInviteNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.MyInviteAwardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.MyinviteRankingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.RealnameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.find.FindDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.other.AdvertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.PayPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.PayOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.BackSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.room.AllMsgActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".ui.room.RoomRankActivity" />
+        <activity android:name=".ui.mine.NewMyBillActivity" />
+        <activity android:name=".ui.mine.MyFriendsActivity" />
+        <activity android:name=".ui.home.RankActivityActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_back_gift"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_115"
+    android:layout_marginHorizontal="@dimen/dp_5"
+    android:layout_marginVertical="@dimen/dp_8">
+
+    <RelativeLayout
+        android:id="@+id/git_rl"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/lw_item_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_show_prop"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_3" />
+
+        <TextView
+            android:id="@+id/tv_use_prop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/bg_round2_ffa"
+            android:paddingHorizontal="@dimen/dp_4"
+            android:paddingVertical="@dimen/dp_2"
+            android:text="@string/tv_use_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_8"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view_select_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ffo_1"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name_prop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/git_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="--"
+        android:textColor="@color/white8"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_price_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_prop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="--"
+        android:textColor="#9871FF"
+        android:textSize="@dimen/sp_11" />
+
+
+</RelativeLayout>

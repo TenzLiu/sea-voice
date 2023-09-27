@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AddSubView">
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="subSrc" format="reference" />
+        <attr name="subBackground" format="reference" />
+        <attr name="addSrc" format="reference" />
+        <attr name="addBackground" format="reference" />
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerLayout">
+        <attr name="aspect" format="float" />
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+
+        <attr name="maskHeight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="XTwoTextView">
+        <attr name="topTextColor" format="color|reference"/>
+        <attr name="bottomTextColor" format="color|reference"/>
+        <attr name="topTextSize" format="dimension"/>
+        <attr name="bottomTextSize" format="dimension"/>
+        <attr name="topText" format="string"/>
+        <attr name="bottomText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TwoTextLinearView">
+        <attr name="leftTextColor" format="color|reference" />
+        <attr name="rightTextColor" format="color|reference" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="showArrow" format="boolean" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="drawablePadding" format="dimension"/>
+        <attr name="rightGravity" format="integer">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+</resources>

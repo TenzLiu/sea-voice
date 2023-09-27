@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:paddingHorizontal="@dimen/dp_25"
+        android:paddingTop="@dimen/dp_30"
+        android:paddingBottom="@dimen/dp_50"
+        android:background="@drawable/record_bg">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/mSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_25">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/title_show1"
+        android:layout_width="186dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/my_egg_title"
+        android:gravity="center_horizontal"
+        android:text="本期奖池"
+        android:layout_gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:src="@drawable/orange_close"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/iv_close"/>
+
+</RelativeLayout>

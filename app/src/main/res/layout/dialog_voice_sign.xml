@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_20dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="声音签名"
+           android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/gb_iv"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ly_close"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="听说录一段语音介绍自己，粉丝人数会每天增加多一倍哟～"
+        android:textColor="#ff9fa3b0"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_voice"
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/bg_yp"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="6dp">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/yp_icon"/>
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_65"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="00:00"
+            android:textColor="#2980B9"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:drawableTop="@drawable/delete"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/ly_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/record"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="按住录音"
+                android:textColor="@color/ly_color"
+                android:textSize="12sp"
+         />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:drawableTop="@drawable/selector_play_pause"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="试听"
+                android:textColor="@color/ly_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_36"
+        android:background="@drawable/bg_round_blue_18"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center_horizontal"
+        android:text="保存录音"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+    />
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bg_white_top_20dp">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_upload"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="上传"-->
+<!--            android:textColor="#99000000"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_title"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_tip"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="13dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="听说录一段语音介绍自己，粉丝人数会每天\n多增加一倍哟~"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_title" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_record"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="31dp"-->
+<!--            android:layout_marginBottom="34dp"-->
+<!--            android:drawableTop="@drawable/record"-->
+<!--            android:drawablePadding="4dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="按住录音"-->
+<!--            android:textColor="@color/C7E26E0"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ll_voice" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_delete"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:drawableTop="@drawable/delete"-->
+<!--            android:drawablePadding="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="删除"-->
+<!--            android:textColor="#66000000"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_record"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/tv_record" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_play"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:drawableTop="@drawable/selector_play_pause"-->
+<!--            android:drawablePadding="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="试听"-->
+<!--            android:textColor="@color/C7E26E0"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/tv_record"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/tv_record" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</LinearLayout>

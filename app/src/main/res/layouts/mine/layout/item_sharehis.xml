@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_name_sharehis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="--"
+        android:textColor="@color/textColor3"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time_sharehis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_sharehis"
+        android:layout_marginTop="@dimen/dp_1"
+        android:text="--"
+        android:textColor="@color/textColor6"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_money_sharehis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="--"
+        android:textColor="@color/FF003F"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

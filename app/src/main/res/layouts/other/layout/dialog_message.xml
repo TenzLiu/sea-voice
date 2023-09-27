@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_back_auction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lucency"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_message_d"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="2"
+        android:background="@drawable/bg_round12_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/mTabLayout_message_d"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_3"
+                tl:tl_indicator_anim_enable="true"
+                tl:tl_indicator_bounce_enable="false"
+                tl:tl_indicator_color="#4BA6DC"
+                tl:tl_textSelectColor="#4BA6DC"
+                tl:tl_indicator_width="@dimen/dp_16"
+                tl:tl_indicator_height="@dimen/dp_4"
+                tl:tl_indicator_corner_radius="@dimen/dp_14"
+                tl:tl_textUnselectColor="#9FA3B0"
+                tl:tl_textsize="@dimen/sp_12">
+
+            </com.flyco.tablayout.SlidingTabLayout>
+
+            <ImageView
+                android:id="@+id/iv_close_message_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/popup_close"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mViewPager_message_d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+</LinearLayout>

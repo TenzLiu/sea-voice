@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_62"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_clicker"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_12">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_friend"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/default_head"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_name_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_show_friend"
+        android:text="--"
+        android:textColor="#1C2023" />
+
+
+    <TextView
+        android:id="@+id/user_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_toEndOf="@id/iv_show_friend"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_below="@+id/tv_name_friend"
+        android:text="ID:"
+        android:visibility="gone"
+        android:textColor="#ff5e6973"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/iv_end_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去找Ta"
+        android:drawableTop="@drawable/icon_daohang"
+        android:drawablePadding="@dimen/dp_5"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:textColor="@color/tvCommon"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/caozuot_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:paddingVertical="@dimen/dp_4"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_round_blue_18"
+        android:textSize="12sp"
+        android:text=""/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_line"
+        />
+</RelativeLayout>

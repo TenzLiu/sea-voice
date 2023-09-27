@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        android:background="@drawable/bg_card_4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:placeholderImage="@color/bg_gray"
+                app:actualImageScaleType="centerCrop"
+                android:id="@+id/iv_head"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_head"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="@dimen/dp_8"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"
+                    android:text="小心心"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:textColor="#1C2023"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_distance"
+                    android:text="3.1km"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:drawablePadding="3dp"
+                    android:textColor="#2980B9"
+                    android:textSize="12sp"
+                    android:drawableStart="@drawable/distance"/>
+
+
+                <TextView
+                    android:id="@+id/tv_level"
+                   android:layout_below="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_1"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="勋章"
+                    android:textColor="#fff"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_star"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_toRightOf="@+id/tv_level"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingVertical="@dimen/dp_1"
+                    android:gravity="center"
+                    android:text="勋章"
+                    android:textColor="#fff"
+                    android:textSize="11sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_level"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#000103"
+                    android:maxLines="2"
+                    android:textSize="@dimen/sp_12"
+                    android:minLines="2"
+                    android:ellipsize="end"
+                    android:text="个性签名：人，其实不需要太多的东西，只要健康的活着，真 诚的爱着，也不失为一种富有。"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_fans_count"
+                            android:textSize="14sp"
+                            android:textColor="#000103"
+                            android:text="23"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="#000103"
+                            android:text="粉丝"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="声音签名"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="6dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:id="@+id/tv_play_voice"
+                        android:textSize="12sp"
+                        android:textColor="@color/C7521DF"
+                        android:text="9''"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10dp"
+                        android:drawableStart="@drawable/voice"
+                        android:drawablePadding="11dp"
+                        android:background="@drawable/bg_pink_4dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="7dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_name"-->
+<!--                android:text="小心心"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/iv_head"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:textColor="#1C2023"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:drawableEnd="@drawable/selector_man"-->
+<!--                android:drawablePadding="4dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_distance"-->
+<!--                android:text="3.1km"-->
+<!--                app:layout_constraintStart_toEndOf="@id/tv_name"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@id/tv_name"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:drawablePadding="3dp"-->
+<!--                android:textColor="#2980B9"-->
+<!--                android:textSize="12sp"-->
+<!--                android:drawableStart="@drawable/distance"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_fans_count"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_name"-->
+<!--                app:layout_constraintStart_toStartOf="@id/tv_name"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:text="粉丝：23"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_level"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_count"-->
+<!--                app:layout_constraintStart_toEndOf="@id/tv_fans_count"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="@dimen/dp_8"-->
+<!--                android:paddingVertical="@dimen/dp_1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="勋章"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="11sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_star"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_count"-->
+<!--                app:layout_constraintStart_toEndOf="@id/tv_level"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="@dimen/dp_8"-->
+<!--                android:paddingVertical="@dimen/dp_1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="勋章"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="11sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_play_voice"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_count"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/C7521DF"-->
+<!--                android:text="9''"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:drawableStart="@drawable/voice"-->
+<!--                android:drawablePadding="11dp"-->
+<!--                android:background="@drawable/bg_pink_4dp"-->
+<!--                android:paddingTop="3dp"-->
+<!--                android:paddingBottom="3dp"-->
+<!--                android:paddingStart="7dp"-->
+<!--                android:paddingEnd="7dp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="声音签名"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintBaseline_toBaselineOf="@id/tv_fans_count"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/tv_play_voice"-->
+<!--                android:layout_marginEnd="6dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tv_fans_count"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_title"-->
+<!--                app:layout_constraintStart_toStartOf="@id/tv_title"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:text="粉丝：23"/>-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_sign"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_fans_count"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                app:layout_constraintStart_toStartOf="@id/tv_name"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:textColor="#000103"-->
+<!--                android:maxLines="2"-->
+<!--                android:textSize="@dimen/sp_12"-->
+<!--                android:minLines="2"-->
+<!--                android:ellipsize="end"-->
+<!--                android:text="个性签名：人，其实不需要太多的东西，只要健康的活着，真 诚的爱着，也不失为一种富有。"/>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

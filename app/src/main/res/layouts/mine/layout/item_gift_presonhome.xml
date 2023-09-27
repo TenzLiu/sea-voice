@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_back_gift"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_115"
+    android:layout_marginHorizontal="@dimen/dp_5"
+    android:layout_marginVertical="@dimen/dp_8">
+
+    <RelativeLayout
+        android:id="@+id/git_rl"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@drawable/bg_green_trans_10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_show_gift"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_3" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/git_rl"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="--"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_num_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_gift"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="--"
+        android:textColor="@color/tvCommon"
+        android:textSize="@dimen/sp_11" />
+
+
+</RelativeLayout>

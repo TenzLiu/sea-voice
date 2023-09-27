@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_26" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/sp_20"/>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/mTabLayout_message"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_44"
+        tl:tl_indicator_color="#2980B9"
+        tl:tl_indicator_margin_bottom="@dimen/dp_5"
+        tl:tl_indicator_width="0dp"
+        android:layout_marginLeft="@dimen/dp_16"
+        tl:tl_tab_space_equal="true"
+        android:visibility="invisible"
+        tl:tl_textSelectColor="@color/black8"
+        tl:tl_textUnselectColor="@color/black6"
+        tl:tl_textsize="@dimen/sp_24">
+
+    </com.flyco.tablayout.SlidingTabLayout>
+
+
+        <TextView
+            android:id="@+id/txl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_txl"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_11"
+            android:textColor="#1C2023"/>
+
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/clear_unread"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fans"
+            android:text="粉丝"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/textColor"
+            android:drawableEnd="@drawable/arrows"
+            android:drawableStart="@drawable/fans"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_16"
+            android:drawablePadding="@dimen/dp_13"
+            android:paddingStart="@dimen/dp_16"
+            tl:layout_constraintStart_toStartOf="parent"
+            tl:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/dp_16"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_follow"
+            android:text="关注"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_13"
+            android:textColor="@color/textColor"
+            android:drawableStart="@drawable/follower"
+            android:drawableEnd="@drawable/arrows"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_21"
+            android:paddingStart="@dimen/dp_16"
+            tl:layout_constraintEnd_toEndOf="parent"
+            tl:layout_constraintStart_toStartOf="parent"
+            tl:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/dp_16"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_friend"
+            android:text="好友"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dp_13"
+            android:textColor="@color/textColor"
+            android:drawableStart="@drawable/friends"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_21"
+            android:drawableEnd="@drawable/arrows"
+            android:paddingStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            tl:layout_constraintEnd_toEndOf="parent"
+            tl:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager_message"
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
