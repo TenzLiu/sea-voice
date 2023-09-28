@@ -129,17 +129,17 @@ public class DataInputActivity extends MyBaseActivity {
         if (!StringUtils.isEmpty(headerImg)) {
 //            updateImgtoShow(headerImg);
         }else {
-            headerImg = "https://senhaiyuyin1.obs.cn-east-3.myhuaweicloud.com/22.jpg";
+            headerImg = "https://app-voice.obs.cn-east-3.myhuaweicloud.com/admin/21ae108a6dab404fb468e4f1f30f1262.png";
         }
         ImageUtils.loadUri(ivHeaderDatainput, headerImg);
         if (!StringUtils.isEmpty(nickName)) {
             edtNicknameDatainput.setText(nickName);
         }else {
             if (phone.length() > 3){
-                String src = phone.substring(phone.length() - 4);
-                edtNicknameDatainput.setText("惊涛语音" + MyUtils.getInstans().randomUserName(src));
+                String src = phone.substring(phone.length() - 5);
+                edtNicknameDatainput.setText("惊涛语音" + src);
             }else {
-                edtNicknameDatainput.setText("惊涛语音0000");
+                edtNicknameDatainput.setText("惊涛语音00000");
             }
 
         }
@@ -360,7 +360,7 @@ public class DataInputActivity extends MyBaseActivity {
         nickName = edtNicknameDatainput.getText().toString();
         if (StringUtils.isEmpty(headerImg)) {
 //            showToast(getString(R.string.hint_img_datainput));
-            headerImg = "http://thirdqq.qlogo.cn/qqapp/1107759765/50AC222D6A68FD8301B811C885079F9C/100";
+            headerImg = "https://app-voice.obs.cn-east-3.myhuaweicloud.com/admin/21ae108a6dab404fb468e4f1f30f1262.png";
 //            return;
         }
         if (StringUtils.isEmpty(nickName)) {

@@ -704,6 +704,7 @@ public class ChatRecyclerAdapter extends BaseQuickAdapter<String, BaseViewHolder
                 stringBuilder = new SpannableStringBuilder();
                 stringBuilder.append("恭喜  ");
 
+                int type = chatMessageBean122.getData().getType();
                 String nickName1 = chatMessageBean122.getData().getNickname();
                 stringBuilder.append(nickName1);
                 colorSpan = new ForegroundColorSpan(ContextCompat.getColor(mContext, R.color.egg_color));
@@ -726,7 +727,16 @@ public class ChatRecyclerAdapter extends BaseQuickAdapter<String, BaseViewHolder
                 };
                 stringBuilder.setSpan(clickableSpan, 0, stringBuilder.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-                stringBuilder.append(" 探险获得了 ");
+                if(type == 1){
+                    stringBuilder.append(" 黄金宝箱获得了 ");
+                }else if(type == 2){
+                    stringBuilder.append(" 钻石宝箱获得了 ");
+                }else if(type == 3){
+                    stringBuilder.append(" 转盘获得了 ");
+                }else{
+                    stringBuilder.append(" 探险获得了 ");
+                }
+
 
                 stringBuilder.append(chatMessageBean122.getData().getMessageShow());
                 colorSpan = new ForegroundColorSpan(ContextCompat.getColor(mContext, R.color.egg_color));

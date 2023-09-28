@@ -55,6 +55,8 @@ public class ChatMessageBean {
 
         private Long cost;//礼物价值（122 探险全服通知）
 
+        private int type;//类型
+
         public DataBean() {
         }
 
@@ -139,6 +141,14 @@ public class ChatMessageBean {
 
         public void setUid(int uid) {
             this.uid = uid;
+        }
+
+        public int getType() {
+            return type;
+        }
+
+        public void setType(int type) {
+            this.type = type;
         }
     }
 }
