@@ -179,7 +179,7 @@ public class DonghaiPalaceFishingDialog extends Dialog implements FrameAnimation
      */
     private void getRealtimeCall() {
         HashMap<String, Object> params = new HashMap<>();
-        params.put("type", 3);
+        params.put("type", 1);
         HttpManager.getInstance().post(Api.jackpotSize, params, new MyObserver(activity) {
             @Override
             public void success(String responseString) {
@@ -240,23 +240,23 @@ public class DonghaiPalaceFishingDialog extends Dialog implements FrameAnimation
     }
 
     private void showDanJiangDialog() {
-        DanJiangDialog danJiangDialog = new DanJiangDialog(activity, 22, fishBeanViewMap);
+        DanJiangDialog danJiangDialog = new DanJiangDialog(activity, 1, fishBeanViewMap);
         danJiangDialog.show();
     }
 
     private void showDanJiangRealtimeDialog() {
-        DanJiangRealtimeDialog danJiangDialog = new DanJiangRealtimeDialog(activity, 22);
+        DanJiangRealtimeDialog danJiangDialog = new DanJiangRealtimeDialog(activity, 1);
         danJiangDialog.show();
     }
 
     private void showRankDialog() {
-        DanRankDialog danRankDialog = new DanRankDialog(activity, userId, 22);
+        DanRankDialog danRankDialog = new DanRankDialog(activity, userId, 1);
         danRankDialog.show();
 
     }
 
     private void showExplainDialog() {
-        ExplainDialog explainDialog = new ExplainDialog(activity, 22);
+        ExplainDialog explainDialog = new ExplainDialog(activity, 1);
         explainDialog.show();
     }
 
@@ -271,7 +271,7 @@ public class DonghaiPalaceFishingDialog extends Dialog implements FrameAnimation
         if (myBottomShow1Dialog != null && myBottomShow1Dialog.isShowing()) {
             myBottomShow1Dialog.dismiss();
         }
-        myBottomShow1Dialog = new MyBottomShow1Dialog(activity, i, userId, 23);
+        myBottomShow1Dialog = new MyBottomShow1Dialog(activity, i, userId, 1);
         myBottomShow1Dialog.show();
     }
 
@@ -293,7 +293,7 @@ public class DonghaiPalaceFishingDialog extends Dialog implements FrameAnimation
         map.put("uid", userId);
         map.put("num", number);
         map.put("rid", roomId);
-        HttpManager.getInstance().post(Api.GetLottery3, map, new MyObserver(activity) {
+        HttpManager.getInstance().post(Api.GetLottery, map, new MyObserver(activity) {
             @SuppressLint("SetTextI18n")
             @Override
             public void success(String responseString) {
