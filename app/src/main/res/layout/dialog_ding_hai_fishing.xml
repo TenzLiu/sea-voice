@@ -97,21 +97,21 @@
                     android:layout_width="@dimen/dp_100"
                     android:layout_height="@dimen/dp_40"
                     android:layout_marginEnd="@dimen/dp_10"
-                    android:background="@mipmap/deep_sea_fishing_bt_1" />
+                    android:background="@mipmap/silver_treasure_bt_1" />
 
                 <ImageView
                     android:id="@+id/iv_cout10"
                     android:layout_width="@dimen/dp_100"
                     android:layout_height="@dimen/dp_40"
                     android:layout_marginHorizontal="@dimen/dp_10"
-                    android:background="@mipmap/deep_sea_fishing_bt_10" />
+                    android:background="@mipmap/silver_treasure_bt_10" />
 
                 <ImageView
                     android:id="@+id/iv_cout100"
                     android:layout_width="@dimen/dp_100"
                     android:layout_height="@dimen/dp_40"
                     android:layout_marginStart="@dimen/dp_10"
-                    android:background="@mipmap/deep_sea_fishing_bt_100" />
+                    android:background="@mipmap/silver_treasure_bt_100" />
             </LinearLayout>
 
             <ImageView

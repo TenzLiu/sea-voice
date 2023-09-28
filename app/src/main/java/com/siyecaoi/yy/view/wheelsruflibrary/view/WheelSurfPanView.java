@@ -359,7 +359,7 @@ public class WheelSurfPanView extends View {
         int newAngle = (int) (360 * mMinTimes + (pos - 1) * mAngle + currAngle - (lastPosition == 0 ? 0 : ((lastPosition - 1) * mAngle)));
         //计算目前的角度划过的扇形份数
         int num = (int) ((newAngle - currAngle) / mAngle);
-        ObjectAnimator anim = ObjectAnimator.ofFloat(WheelSurfPanView.this, "rotation", currAngle, newAngle);
+        ObjectAnimator anim = ObjectAnimator.ofFloat(WheelSurfPanView.this, "rotation", currAngle, newAngle + 360/12/2);
         currAngle = newAngle;
         lastPosition = pos;
         // 动画的持续时间，执行多久？
