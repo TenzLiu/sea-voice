@@ -1209,7 +1209,12 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
 //                    voicePresenter.getChatShow(userToken, roomId);
                 }
 
-                chatShowChat.add(s);
+                if(messageBean.getCode() == 888 || messageBean.getCode() == 999){
+
+                }else{
+                    chatShowChat.add(s);
+                }
+
                 chatRecyclerAdapter.notifyDataSetChanged();
 //                chatRecyclerAdapter.addData(s);
                 if (chatRecyclerAdapter.getData().size() > 1000) {
@@ -3908,6 +3913,7 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
     ChatRoomMessage chatRoomMessage = new ChatRoomMessage() {
         @Override
         public void onNewMessage(TIMMessage timMsg) {
+            LogUtils.e("timMsg----------------------");
             if (timMsg.getElement(0) instanceof TIMCustomElem) {
                 JSONObject jsonObject = null;
                 try {
@@ -3962,6 +3968,11 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
 //            voicePresenter.getCall(userToken, roomId);
         } else if (messageBean.getCode() == 999) { //更新 麦位信息
 //            voicePresenter.getChatShow(userToken, roomId);
+        }else if(messageBean.getCode() == 1001){
+
+
+        chatShowChat.add(msg);
+        chatRecyclerAdapter.notifyDataSetChanged();
         }
     }
 
@@ -4564,18 +4575,18 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
                 if (roomCacheBean.getCode() == Api.SUCCESS) {
                     if (roomCacheBean.getData().getX() == 1) {//是否开始 1否，2 是
                         if (goldNum >= roomCacheBean.getData().getY()) {
-                            ivDeepSeaFishing.setVisibility(View.VISIBLE);
+                            ivDonghaiFishing.setVisibility(View.VISIBLE);
                         } else {
-                            ivDeepSeaFishing.setVisibility(View.GONE);
+                            ivDonghaiFishing.setVisibility(View.VISIBLE);
                         }
                     } else if (roomCacheBean.getData().getX() == 2) {
-                        ivDeepSeaFishing.setVisibility(View.VISIBLE);
+                        ivDonghaiFishing.setVisibility(View.VISIBLE);
                     }
                 } else {
                     showToast(roomCacheBean.getMsg());
                 }
                 //第一个显示后才有资格显示第二个
-                if (ivDeepSeaFishing.getVisibility() == View.VISIBLE) {
+                if (ivDonghaiFishing.getVisibility() == View.VISIBLE) {
                     int isOpenDm = (int) SharedPreferenceUtils.get(this, Const.User.IS_OPEN_DM, 0);
                     if (isOpenDm == 0) {
                         ivDinghaiFishing.setVisibility(View.GONE);
@@ -4587,9 +4598,9 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
                 if (ivDinghaiFishing.getVisibility() == View.VISIBLE) {
                     int isOpenCJD = (int) SharedPreferenceUtils.get(this, Const.User.IS_OPEN_CJD, 0);
                     if (isOpenCJD == 0) {
-                        ivDonghaiFishing.setVisibility(View.GONE);
+                        ivDeepSeaFishing.setVisibility(View.GONE);
                     } else {
-                        ivDonghaiFishing.setVisibility(View.VISIBLE);
+                        ivDeepSeaFishing.setVisibility(View.VISIBLE);
                     }
                 }
                 break;

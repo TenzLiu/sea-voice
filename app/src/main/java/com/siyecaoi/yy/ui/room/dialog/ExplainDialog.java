@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
@@ -47,6 +49,8 @@ public class ExplainDialog extends Dialog {
     TextView tvOutputToday;
     @BindView(R.id.tv_blastRateToday)
     TextView tvBlastRateToday;
+    @BindView(R.id.ll)
+    LinearLayout ll;
 
     private int type;
 
@@ -74,6 +78,9 @@ public class ExplainDialog extends Dialog {
         iv_close.setOnClickListener(view -> {
             dismiss();
         });
+        if(type == 22){
+            ll.setVisibility(View.GONE);
+        }
 
         getCall();
     }

@@ -183,7 +183,7 @@ public class MyApplication extends BaseApplication implements Thread.UncaughtExc
                             JSONObject jsonObject = new JSONObject(new String(((TIMCustomElem) timMsg.getElement(0)).getData(), "UTF-8"));
                             LogUtils.i("接收腾讯消息1",jsonObject.toString());
                             int code = jsonObject.optInt("code");
-                            if (code == 119 || code == 121 || code == 122) {
+                            if (code == 119 || code == 121 || code == 122 || code == 1001) {
                                 if (chatRoomMessage != null) {
                                     chatRoomMessage.onNewMessage(timMsg);
                                 }

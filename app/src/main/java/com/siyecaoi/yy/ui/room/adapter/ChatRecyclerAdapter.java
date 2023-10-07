@@ -79,6 +79,7 @@ public class ChatRecyclerAdapter extends BaseQuickAdapter<String, BaseViewHolder
         ForegroundColorSpan colorSpan;
         ClickableSpan clickableSpan;
         switch (messageBean.getCode()) {
+            case 1001:
             case 100:
                 tv_show_chat.setTextColor(ContextCompat.getColor(mContext, R.color.xt_color));
                 LogUtils.e("msg", item);
