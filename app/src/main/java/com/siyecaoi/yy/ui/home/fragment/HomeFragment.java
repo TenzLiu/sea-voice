@@ -74,12 +74,12 @@ public class HomeFragment extends MyBaseFragment {
         titles = new ArrayList<>();
         titles.add(getString(R.string.tv_hot_home));
 
-        titles.add(getString(R.string.tv_pei_home));
+//        titles.add(getString(R.string.tv_pei_home));
 //        titles.add(getString(R.string.tv_match_home));
 
-        titles.add(getString(R.string.tv_radio_home));
+//        titles.add(getString(R.string.tv_radio_home));
 //        titles.add(getString(R.string.tv_rec_home));
-        titles.add("个人");
+//        titles.add("个人");
 
 //        titles.add(getString(R.string.tv_rec_home));3
 //        titles.add(getString(R.string.tv_music_home));4
@@ -95,7 +95,7 @@ public class HomeFragment extends MyBaseFragment {
         Bundle bundle1 = new Bundle();
         bundle1.putInt(Const.ShowIntent.TYPE, 2);
         otherFragment1.setArguments(bundle1);
-        fragments.add(otherFragment1);
+//        fragments.add(otherFragment1);
 
 //        速配
 //        matchHomeFragment = new MatchHomeFragment();
@@ -106,7 +106,7 @@ public class HomeFragment extends MyBaseFragment {
         Bundle bundle2 = new Bundle();
         bundle2.putInt(Const.ShowIntent.TYPE, 7);
         otherFragment2.setArguments(bundle2);
-        fragments.add(otherFragment2);
+//        fragments.add(otherFragment2);
 
         //游戏
 //        Fragment otherFragment = new OtherFragment();
@@ -118,7 +118,7 @@ public class HomeFragment extends MyBaseFragment {
 
         //个人
         Fragment personalFragment = new HomePersonalFragment();
-        fragments.add(personalFragment);
+//        fragments.add(personalFragment);
 
 //        for (int i = 3; i < titles.size(); i++) {
 //            Fragment otherFragment = new OtherFragment();

@@ -830,4 +830,11 @@ public class Api {
      */
     public static String PlayPassword1 = "";
 
+    /**
+     * 保存设备ID
+     * @param uid
+     * @param uuid
+     */
+    public static String saveUuid = "user/saveUuid";
+
 }

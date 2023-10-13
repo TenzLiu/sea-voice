@@ -33,6 +33,7 @@ import com.siyecaoi.yy.netUtls.MyObserver;
 import com.siyecaoi.yy.ui.MainActivity;
 import com.siyecaoi.yy.utils.ActivityCollector;
 import com.siyecaoi.yy.utils.Const;
+import com.siyecaoi.yy.utils.MyUtils;
 import com.siyecaoi.yy.utils.SharedPreferenceUtils;
 import com.siyecaoi.yy.utils.spripaar.IsPhoneNumber;
 import com.tencent.imsdk.TIMManager;
@@ -268,6 +269,8 @@ public class PhoneLoginActivity extends MyBaseActivity {
         map.put("phone", phoneShow);
         map.put("password", Md5.getMd5Value(password));
         map.put("smsCode", code);
+        String uuid = MyUtils.getInstans().getUuid(this);
+        map.put("uuid", uuid);
         HttpManager.getInstance().post(Api.loginPhone, map, new MyObserver(this) {
             @Override
             public void success(String responseString) {

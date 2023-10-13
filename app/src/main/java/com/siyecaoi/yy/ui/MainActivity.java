@@ -182,6 +182,7 @@ public class MainActivity extends MyBaseActivity implements ConversationManagerK
         if (userToken != 0) {
             usetLoginTime();
             getUserCall();
+//            saveUuid();
         }
         setTimerOnline();
 
@@ -212,6 +213,17 @@ public class MainActivity extends MyBaseActivity implements ConversationManagerK
                 if (userBean.getCode() == 0) {
                     initShared(userBean.getData());
                 }
+            }
+        });
+    }
+
+    private void saveUuid() {
+        HashMap<String, Object> map = HttpManager.getInstance().getMap();
+        map.put("uid", userToken);
+        map.put("uuid", MyUtils.getInstans().getUuid(this));
+        HttpManager.getInstance().post(Api.saveUuid, map, new MyObserver(this) {
+            @Override
+            public void success(String responseString) {
             }
         });
     }

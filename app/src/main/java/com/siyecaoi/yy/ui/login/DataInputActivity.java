@@ -428,6 +428,8 @@ public class DataInputActivity extends MyBaseActivity {
         if (!StringUtils.isEmpty(cityName)) {
             map.put("city", cityName);
         }
+        String uuid = MyUtils.getInstans().getUuid(this);
+        map.put("uuid", uuid);
         HttpManager.getInstance().post(Api.PhoneRegistered, map, new MyObserver(this) {
             @Override
             public void success(String responseString) {
