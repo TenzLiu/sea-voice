@@ -21,13 +21,13 @@
 
         </FrameLayout>
 
-        <com.siyecaoi.yy.view.MyViewPager
+        <com.jingtaoi.yy.view.MyViewPager
             android:id="@+id/myViewpager_main"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
-        </com.siyecaoi.yy.view.MyViewPager>
+        </com.jingtaoi.yy.view.MyViewPager>
 
         <include layout="@layout/view_line"/>
 
@@ -173,7 +173,7 @@
             android:layout_marginStart="@dimen/dp_5"
             android:layout_centerVertical="true">
 
-            <com.siyecaoi.yy.view.ShapeImageView
+            <com.jingtaoi.yy.view.ShapeImageView
                 android:id="@+id/iv_roomshow_main"
                 fresco:shape="Circle"
                 android:layout_width="@dimen/dp_52"

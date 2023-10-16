@@ -4,7 +4,7 @@
     android:background="#3f3f42"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.siyecaoi.yy.view.MyPhotoView
+    <com.jingtaoi.yy.view.MyPhotoView
         android:id="@+id/photoshow_myphoto"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"

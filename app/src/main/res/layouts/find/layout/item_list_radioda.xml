@@ -16,7 +16,7 @@
         android:visibility="visible"
         android:layout_height="wrap_content">
 
-        <com.siyecaoi.yy.view.ShapeImageView
+        <com.jingtaoi.yy.view.ShapeImageView
             android:id="@+id/iv_header_radioda"
             android:layout_width="@dimen/dp_40"
             android:layout_height="@dimen/dp_40"
@@ -108,7 +108,7 @@
             android:src="@drawable/me_msg_icon"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"/>
-        <com.siyecaoi.yy.view.ShapeImageView
+        <com.jingtaoi.yy.view.ShapeImageView
             android:id="@+id/iv_user_header_radioda"
             android:layout_width="@dimen/dp_40"
             android:layout_height="@dimen/dp_40"

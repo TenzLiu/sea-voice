@@ -24,7 +24,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="@dimen/dp_85"
         android:layout_marginEnd="@dimen/dp_10">
-        <com.siyecaoi.yy.view.ShapeImageView
+        <com.jingtaoi.yy.view.ShapeImageView
             android:id="@+id/iv_one_giftall"
             android:layout_width="@dimen/dp_42"
             android:layout_height="@dimen/dp_42"

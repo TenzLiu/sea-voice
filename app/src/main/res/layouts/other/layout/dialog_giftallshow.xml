@@ -20,7 +20,7 @@
         android:src="@drawable/shape_r40_s2_b9d551"
         android:layout_centerHorizontal="true"
         android:visibility="visible" />
-    <com.siyecaoi.yy.view.ShapeImageView
+    <com.jingtaoi.yy.view.ShapeImageView
         android:id="@+id/iv_one_giftall"
         android:layout_width="@dimen/dp_48"
         android:layout_height="@dimen/dp_48"

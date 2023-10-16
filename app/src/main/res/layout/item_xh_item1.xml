@@ -17,7 +17,7 @@
             android:background="@drawable/hot_grid_bg"
             android:layout_centerHorizontal="true"/>
 
-        <com.siyecaoi.yy.view.ShapeImageView
+        <com.jingtaoi.yy.view.ShapeImageView
             app:shape="RoundRectangle"
             app:siRadius="@dimen/dp_10"
             android:scaleType="centerCrop"

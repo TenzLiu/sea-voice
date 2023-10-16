@@ -6,7 +6,7 @@
     android:background="@drawable/home_page_color2"
     android:orientation="vertical">
 
-    <com.siyecaoi.yy.view.swipeView.SwipeFlingView
+    <com.jingtaoi.yy.view.swipeView.SwipeFlingView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"

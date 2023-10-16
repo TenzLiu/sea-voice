@@ -40,11 +40,11 @@
 
 
 #工具类--------------------------------------------------
--keep class com.siyecaoi.yy.utils.** {*;}
+-keep class com.jingtaoi.yy.utils.** {*;}
 
 #项目数据实体类文件
--keep class com.siyecaoi.yy.bean.**{*;}
--keep class com.siyecaoi.yy.model.**{*;}
+-keep class com.jingtaoi.yy.bean.**{*;}
+-keep class com.jingtaoi.yy.model.**{*;}
 
 
 #---------------Oss图片上传--------------

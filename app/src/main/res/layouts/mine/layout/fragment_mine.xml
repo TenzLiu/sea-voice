@@ -198,7 +198,7 @@
             android:orientation="vertical"
             android:padding="@dimen/dp_1">
 
-            <com.siyecaoi.yy.view.RoundRelativeLayout
+            <com.jingtaoi.yy.view.RoundRelativeLayout
                 android:id="@+id/rl_mywallet_mine"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_50"
@@ -226,7 +226,7 @@
                     android:layout_alignParentEnd="true"
                     android:visibility="gone"
                     android:src="@drawable/list_arrows" />
-            </com.siyecaoi.yy.view.RoundRelativeLayout>
+            </com.jingtaoi.yy.view.RoundRelativeLayout>
 
             <View
                 android:layout_width="match_parent"

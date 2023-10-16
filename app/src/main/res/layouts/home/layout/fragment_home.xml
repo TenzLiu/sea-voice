@@ -71,7 +71,7 @@
         </LinearLayout>
 
 
-        <com.siyecaoi.yy.view.SlidingTabLayout
+        <com.jingtaoi.yy.view.SlidingTabLayout
             android:id="@+id/mTabLayout_home"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -88,7 +88,7 @@
             tl:tl_textUnselectColor="@color/textColor66"
             tl:tl_textsize="@dimen/sp_16">
 
-        </com.siyecaoi.yy.view.SlidingTabLayout>
+        </com.jingtaoi.yy.view.SlidingTabLayout>
     </RelativeLayout>
 
     <androidx.viewpager.widget.ViewPager

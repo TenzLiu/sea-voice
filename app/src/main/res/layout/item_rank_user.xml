@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.siyecaoi.yy.view.ShapeImageView
+        <com.jingtaoi.yy.view.ShapeImageView
             android:id="@+id/iv_head"
             android:layout_width="48dp"
             android:layout_height="48dp"

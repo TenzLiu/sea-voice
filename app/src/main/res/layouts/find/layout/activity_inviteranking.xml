@@ -51,7 +51,7 @@
     </RelativeLayout>
 
 
-    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+    <com.jingtaoi.yy.view.ScrollInterceptScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="@dimen/dp_50">
@@ -136,5 +136,5 @@
             </androidx.recyclerview.widget.RecyclerView>
 
         </RelativeLayout>
-    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+    </com.jingtaoi.yy.view.ScrollInterceptScrollView>
 </RelativeLayout>

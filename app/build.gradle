@@ -20,7 +20,7 @@ android {
     }
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.siyecaoi.yy"
+        applicationId "com.jingtaoi.yy"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
@@ -34,7 +34,7 @@ android {
         }
 
         manifestPlaceholders = [
-                JPUSH_PKGNAME: "com.siyecaoi.yy",
+                JPUSH_PKGNAME: "com.jingtaoi.yy",
                 JPUSH_APPKEY : "", //JPush 上注册的包名对应的 Appkey.
                 JPUSH_CHANNEL: "", //暂时填写默认值即可.
         ]

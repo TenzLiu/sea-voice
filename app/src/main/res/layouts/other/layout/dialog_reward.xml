@@ -128,14 +128,14 @@
                 android:text="@string/tv_you" />
         </RelativeLayout>
 
-        <com.siyecaoi.yy.view.FlowLayout
+        <com.jingtaoi.yy.view.FlowLayout
             android:id="@+id/mFlow_reward"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/dp_10"
             android:paddingEnd="@dimen/dp_5">
 
-        </com.siyecaoi.yy.view.FlowLayout>
+        </com.jingtaoi.yy.view.FlowLayout>
 
         <Button
             android:id="@+id/btn_reward"

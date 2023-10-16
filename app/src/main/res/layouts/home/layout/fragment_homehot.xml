@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+    <com.jingtaoi.yy.view.ScrollInterceptScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -70,7 +70,7 @@
                         android:src="@drawable/tv_phb"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"/>
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:layout_marginStart="9dp"
@@ -82,7 +82,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginBottom="@dimen/dp_10"
                         android:visibility="invisible" />
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:id="@+id/iv_rank_2"
@@ -94,7 +94,7 @@
                         app:borderWidth="1dp"
                         app:borderColor="@color/white"
                         android:layout_marginBottom="@dimen/dp_10" />
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:id="@+id/iv_rank_3"
@@ -166,7 +166,7 @@
                         android:src="@drawable/tv_fjb"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"/>
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:id="@+id/iv_rank_4"
@@ -178,7 +178,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="9dp"
                         android:visibility="invisible" />
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:id="@+id/iv_rank_5"
@@ -190,7 +190,7 @@
                         app:shape="Circle"
                         app:borderWidth="1dp"
                         app:borderColor="@color/white"/>
-                    <com.siyecaoi.yy.view.ShapeImageView
+                    <com.jingtaoi.yy.view.ShapeImageView
                         android:layout_width="@dimen/dp_32"
                         android:layout_height="@dimen/dp_32"
                         android:id="@+id/iv_rank_6"
@@ -308,5 +308,5 @@
                 </androidx.recyclerview.widget.RecyclerView>
             </RelativeLayout>
         </LinearLayout>
-    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+    </com.jingtaoi.yy.view.ScrollInterceptScrollView>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

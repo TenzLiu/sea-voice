@@ -5,7 +5,7 @@
     android:background="@color/white_color"
     android:orientation="vertical">
 
-    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+    <com.jingtaoi.yy.view.ScrollInterceptScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -123,7 +123,7 @@
 
             </RelativeLayout>
 
-            <com.siyecaoi.yy.view.FlowLayout
+            <com.jingtaoi.yy.view.FlowLayout
                 android:id="@+id/fl_roomSet"
                 android:layout_marginStart="@dimen/dp_16"
                 android:layout_marginEnd="@dimen/dp_16"
@@ -305,7 +305,7 @@
 
 
         </LinearLayout>
-    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+    </com.jingtaoi.yy.view.ScrollInterceptScrollView>
 
     <Button
         android:id="@+id/tv_save_roomset"

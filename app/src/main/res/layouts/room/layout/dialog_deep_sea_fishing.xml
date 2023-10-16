@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
-                <com.siyecaoi.yy.view.wheelsruflibrary.view.WheelSurfView
+                <com.jingtaoi.yy.view.wheelsruflibrary.view.WheelSurfView
                     android:id="@+id/wheelSurfView"
                     android:layout_width="@dimen/dp_280"
                     android:layout_height="@dimen/dp_280"
@@ -67,7 +67,7 @@
                     wheelSurfView:typenum="12"
                     wheelSurfView:vartime="75">
 
-                </com.siyecaoi.yy.view.wheelsruflibrary.view.WheelSurfView>
+                </com.jingtaoi.yy.view.wheelsruflibrary.view.WheelSurfView>
             </RelativeLayout>
 
             <LinearLayout

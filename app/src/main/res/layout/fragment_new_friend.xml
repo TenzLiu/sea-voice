@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.siyecaoi.yy.view.ScrollInterceptScrollView
+    <com.jingtaoi.yy.view.ScrollInterceptScrollView
         android:id="@+id/mscrollView_friend"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,6 +28,6 @@
                 </androidx.recyclerview.widget.RecyclerView>
             </RelativeLayout>
         </LinearLayout>
-    </com.siyecaoi.yy.view.ScrollInterceptScrollView>
+    </com.jingtaoi.yy.view.ScrollInterceptScrollView>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -79,7 +79,7 @@
             android:textColor="#1C2023"
             android:textSize="14sp" />
 
-        <com.siyecaoi.yy.view.FlowLayout
+        <com.jingtaoi.yy.view.FlowLayout
             android:id="@+id/fl_hot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -106,7 +106,7 @@
                 android:src="@drawable/clear" />
         </LinearLayout>
 
-        <com.siyecaoi.yy.view.FlowLayout
+        <com.jingtaoi.yy.view.FlowLayout
             android:id="@+id/fl_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
