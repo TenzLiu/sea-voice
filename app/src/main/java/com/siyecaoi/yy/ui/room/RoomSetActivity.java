@@ -89,6 +89,8 @@ public class RoomSetActivity extends MyBaseActivity {
     RelativeLayout rlClearRoomset;
     @BindView(R.id.fl_roomSet)
     FlowLayout flRoomSet;
+    private int isPay;//是否代充  1开启
+    private int isGift;//是否开启礼物赠送限制  1开启
 
     @Override
     public void initData() {
@@ -227,6 +229,8 @@ public class RoomSetActivity extends MyBaseActivity {
         roomPass = roomBean.getPassword();
         roomback = roomBean.getBjImg();
         roomMark = roomBean.getRoomLabel();
+        isPay = roomBean.getIsPay();
+        isGift = roomBean.getIsGift();
         edtNameRoomset.setText(roomName);
         edtPassRoomset.setText(roomPass);
         tvDefaultRoomset.setText(roomBean.getBjName());
@@ -419,6 +423,8 @@ public class RoomSetActivity extends MyBaseActivity {
         map.put("isState", giftshow);
         map.put("bjImg", roomBackImg);
         map.put("bjName", roomback);
+        map.put("isPay", isPay);
+        map.put("isGift", isGift);
         HttpManager.getInstance().post(Api.getUpRoom, map, new MyObserver(this) {
             @Override
             public void success(String responseString) {

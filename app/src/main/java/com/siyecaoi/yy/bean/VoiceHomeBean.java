@@ -147,6 +147,24 @@ public class VoiceHomeBean {
             private String mark;//房间官方语句。
             private String liang;//靓号
             private int RoomNum;
+            private int isPay;//是否代充  1开启
+            private int isGift;//是否开启礼物赠送限制  1开启
+
+            public int getIsPay() {
+                return isPay;
+            }
+
+            public void setIsPay(int isPay) {
+                this.isPay = isPay;
+            }
+
+            public int getIsGift() {
+                return isGift;
+            }
+
+            public void setIsGift(int isGift) {
+                this.isGift = isGift;
+            }
 
             public int getRoomNum() {
                 return RoomNum;

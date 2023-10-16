@@ -410,7 +410,7 @@ public class DeepSeaFishingDialog extends Dialog implements FrameAnimation.Anima
         } else if (chooseOne == 2) {
             number = 10;
         } else if (chooseOne == 3) {
-            number = 100;
+            number = 30;
         }
         HashMap<String, Object> map = HttpManager.getInstance().getMap();
         map.put("uid", userId);

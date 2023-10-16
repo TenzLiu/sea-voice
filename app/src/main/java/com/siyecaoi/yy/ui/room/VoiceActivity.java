@@ -1209,7 +1209,7 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
 //                    voicePresenter.getChatShow(userToken, roomId);
                 }
 
-                if(messageBean.getCode() == 888 || messageBean.getCode() == 999){
+                if((goldNum < 2 && messageBean.getCode() == 122) || messageBean.getCode() == 888 || messageBean.getCode() == 999){
 
                 }else{
                     chatShowChat.add(s);
@@ -4577,7 +4577,7 @@ public class VoiceActivity extends MyBaseMVPActivity implements VoiceView,
                         if (goldNum >= roomCacheBean.getData().getY()) {
                             ivDonghaiFishing.setVisibility(View.VISIBLE);
                         } else {
-                            ivDonghaiFishing.setVisibility(View.VISIBLE);
+                            ivDonghaiFishing.setVisibility(View.GONE);
                         }
                     } else if (roomCacheBean.getData().getX() == 2) {
                         ivDonghaiFishing.setVisibility(View.VISIBLE);
